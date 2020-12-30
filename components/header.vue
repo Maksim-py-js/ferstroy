@@ -6,14 +6,14 @@
             
             <b-container>
                 <div class="d-flex justify-content-between w-100">
-                <b-navbar-nav class="text-center">
+                <b-navbar-nav class="text-center h-100">
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">О компании</nuxt-link>
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Объекты</nuxt-link>
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Уникальности проектов</nuxt-link>
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Карьера</nuxt-link>
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Тендеры</nuxt-link>
                     <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Контакты</nuxt-link>
-                    <b-nav-item-dropdown text="Рус" right>
+                    <b-nav-item-dropdown text="Рус">
                     <b-dropdown-item href="#">Англ</b-dropdown-item>
                     <b-dropdown-item href="#">Узб</b-dropdown-item>
                     </b-nav-item-dropdown>
@@ -138,3 +138,53 @@
         </b-container>
     </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        selected_locationOptions: null,
+        selected_timeOptions: null,
+        selected_roominessOptions: null,
+        selected_deadlineOptions: null,
+        selected_apartmantPerFloor: null,
+        locationOptions: [
+          { value: null, text: 'Выберите город' },
+          { value: '1', text: 'Город 1' },
+          { value: '2', text: 'Город 2' },
+          { value: '3', text: 'Город 3' },
+        ],
+        timeOptions: [
+          { value: null, text: 'Выбрать' },
+          { value: '1', text: '5' },
+          { value: '2', text: '10' },
+          { value: '3', text: '15' },
+        ],
+        roominessOptions: [
+          { value: null, text: 'Выбрать' },
+          { value: '1', text: '1' },
+          { value: '2', text: '2' },
+          { value: '3', text: '3' },
+          { value: '4', text: '4' },
+          { value: '5', text: '5+' },
+        ],
+        deadlineOptions: [
+          { value: null, text: 'Выбрать' },
+          { value: '1', text: '1 месяц' },
+          { value: '2', text: '2 месяца' },
+          { value: '3', text: '3 месяца' },
+          { value: '4', text: '4 месяца' },
+          { value: '5', text: '5+ месяцев' },
+        ],
+        apartmantPerFloor: [
+          { value: null, text: 'Кол-во квартир на этаже' },
+          { value: '1', text: '1' },
+          { value: '2', text: '2' },
+          { value: '3', text: '3' },
+          { value: '4', text: '4' },
+          { value: '5', text: '5+' },
+        ],
+      }
+    }
+  }
+</script>

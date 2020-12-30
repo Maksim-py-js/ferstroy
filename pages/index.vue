@@ -178,48 +178,7 @@ import Footer from '@/components/footer'
     data() {
       return {
         rows: 100,
-        currentPage: 1,
-        selected_locationOptions: null,
-        selected_timeOptions: null,
-        selected_roominessOptions: null,
-        selected_deadlineOptions: null,
-        selected_apartmantPerFloor: null,
-        locationOptions: [
-          { value: null, text: 'Выберите город' },
-          { value: '1', text: 'Город 1' },
-          { value: '2', text: 'Город 2' },
-          { value: '3', text: 'Город 3' },
-        ],
-        timeOptions: [
-          { value: null, text: 'Выбрать' },
-          { value: '1', text: '5' },
-          { value: '2', text: '10' },
-          { value: '3', text: '15' },
-        ],
-        roominessOptions: [
-          { value: null, text: 'Выбрать' },
-          { value: '1', text: '1' },
-          { value: '2', text: '2' },
-          { value: '3', text: '3' },
-          { value: '4', text: '4' },
-          { value: '5', text: '5+' },
-        ],
-        deadlineOptions: [
-          { value: null, text: 'Выбрать' },
-          { value: '1', text: '1 месяц' },
-          { value: '2', text: '2 месяца' },
-          { value: '3', text: '3 месяца' },
-          { value: '4', text: '4 месяца' },
-          { value: '5', text: '5+ месяцев' },
-        ],
-        apartmantPerFloor: [
-          { value: null, text: 'Кол-во квартир на этаже' },
-          { value: '1', text: '1' },
-          { value: '2', text: '2' },
-          { value: '3', text: '3' },
-          { value: '4', text: '4' },
-          { value: '5', text: '5+' },
-        ],
+        currentPage: 1
       }
     }
   }
