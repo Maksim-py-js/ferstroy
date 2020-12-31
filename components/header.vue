@@ -2,44 +2,44 @@
     <div>
         <div class="position-relative pb-5">
             <img src="@/assets/images/jpg/large.jpg" class="position-absolute" style="width: 100%; height: 100%; object-fit: cover; z-index: -1;" alt="">
-        <b-navbar toggleable="lg" type="dark" variant="transparent" class="p-0 text-center align-items-center">
-            
-            <b-container>
-                <div class="d-flex justify-content-between w-100">
-                <b-navbar-nav class="text-center h-100">
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">О компании</nuxt-link>
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Объекты</nuxt-link>
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Уникальности проектов</nuxt-link>
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Карьера</nuxt-link>
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Тендеры</nuxt-link>
-                    <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none" href="#">Контакты</nuxt-link>
-                    <b-nav-item-dropdown text="Рус">
-                    <b-dropdown-item href="#">Англ</b-dropdown-item>
-                    <b-dropdown-item href="#">Узб</b-dropdown-item>
-                    </b-nav-item-dropdown>
-                </b-navbar-nav>
-                <div>
-                    <a href="tell:+72712208822" class="text-white text-decoration-none"><h2>71 220 88 22</h2></a>
-                    <b-button variant="outline-light" pill>Связаться с нами</b-button>
-                </div>
+            <b-navbar toggleable="lg" type="dark" variant="transparent" class="p-0 text-center align-items-center">
+                
+                <b-container>
+                    <div class="d-flex justify-content-between w-100">
+                    <b-navbar-nav class="text-center h-100">
+                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">О компании</nuxt-link>
+                        <nuxt-link to="/object_page" class="mr-3 p-2 text-white text-decoration-none">Объекты</nuxt-link>
+                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">Уникальности проектов</nuxt-link>
+                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">Карьера</nuxt-link>
+                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">Тендеры</nuxt-link>
+                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">Контакты</nuxt-link>
+                        <b-nav-item-dropdown text="Рус">
+                        <b-dropdown-item href="#">Англ</b-dropdown-item>
+                        <b-dropdown-item href="#">Узб</b-dropdown-item>
+                        </b-nav-item-dropdown>
+                    </b-navbar-nav>
+                    <div>
+                        <a href="tell:+72712208822" class="text-white text-decoration-none"><h2>71 220 88 22</h2></a>
+                        <b-button variant="outline-light" pill>Связаться с нами</b-button>
+                    </div>
+                    </div>
+                </b-container>
+            </b-navbar>
+            <b-container style="margin-top: 200px;">
+                <b-input-group class="mt-3">
+                    <template #append>
+                    <b-button variant="light"><img src="@/assets/images/svg/loupe.svg" style="width: 15px; height: 15px;" alt=""></b-button>
+                    </template>
+                    <b-form-input placeholder="Удобный поиск новостроек" class="bg-light border-0"></b-form-input>
+                </b-input-group>
+
+
+                <h1 class="text-white text-center mt-5" style="text-transform: uppercase;">nest one</h1>
+                <h6 class="text-white text-center">Первый небоскреб Узбекистана</h6>
+                <div class="text-center mt-4 mb-5">
+                    <b-button variant="outline-light" pill>Узнать подробнее ></b-button>
                 </div>
             </b-container>
-        </b-navbar>
-        <b-container style="margin-top: 200px;">
-        <b-input-group class="mt-3">
-            <template #append>
-            <b-button variant="light"><img src="@/assets/images/svg/loupe.svg" style="width: 15px; height: 15px;" alt=""></b-button>
-            </template>
-            <b-form-input placeholder="Удобный поиск новостроек" class="bg-light border-0"></b-form-input>
-        </b-input-group>
-
-
-        <h1 class="text-white text-center mt-5" style="text-transform: uppercase;">nest one</h1>
-        <h6 class="text-white text-center">Первый небоскреб Узбекистана</h6>
-        <div class="text-center mt-4 mb-5">
-            <b-button variant="outline-light" pill>Узнать подробнее ></b-button>
-        </div>
-        </b-container>
         </div>
         <b-container class="mb-5 pb-3">
             <div class="bg-light py-3 px-4">
