@@ -1,9 +1,13 @@
-.search-dropdown.btn-group > .btn, .btn-group-vertical > .btn {
-    text-align: left !important;
-}
-.search-dropdown.btn-group, .btn-group-vertical {
-    width: 100% !important;
-}
-.search-dropdown .dropdown-toggle::after {
-    display: none;
+.search-dropdown{
+    &.btn-group > .btn, 
+    &.btn-group-vertical > .btn {
+        text-align: left !important;
+    }
+    &.btn-group, 
+    &.btn-group-vertical {
+        width: 100% !important;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
 }

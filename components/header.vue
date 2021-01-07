@@ -10,7 +10,7 @@
                         <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">О компании</nuxt-link>
                         <nuxt-link to="/object_page" class="mr-3 p-2 text-white text-decoration-none">Объекты</nuxt-link>
                         <nuxt-link to="/map" class="mr-3 p-2 text-white text-decoration-none">Карта</nuxt-link>
-                        <nuxt-link to="/super_admin" class="mr-3 p-2 text-white text-decoration-none">Администратор</nuxt-link>
+                        <nuxt-link to="/super_admin/statistic" class="mr-3 p-2 text-white text-decoration-none">Администратор</nuxt-link>
                         <b-nav-item-dropdown text="Рус">
                         <b-dropdown-item href="#">Англ</b-dropdown-item>
                         <b-dropdown-item href="#">Узб</b-dropdown-item>
@@ -31,7 +31,7 @@
                     <b-form-input placeholder="Удобный поиск новостроек" class="bg-light border-0"></b-form-input>
                 </b-input-group> -->
                 <b-dropdown
-                class="search-dropdown"
+                    class="search-dropdown"
                     text="Удобный поиск новостроек"                    
                     no-flip
                     variant="light"

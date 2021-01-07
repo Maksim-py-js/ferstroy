@@ -1,7 +1,8 @@
-.search-dropdown.btn-group > .btn, .btn-group-vertical > .btn {
+.search-dropdown.btn-group > .btn,
+.search-dropdown.btn-group-vertical > .btn {
   text-align: left !important; }
 
-.search-dropdown.btn-group, .btn-group-vertical {
+.search-dropdown.btn-group, .search-dropdown.btn-group-vertical {
   width: 100% !important; }
 
 .search-dropdown .dropdown-toggle::after {
