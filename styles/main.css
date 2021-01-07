@@ -1,18 +1,8 @@
-.search-dropdown.btn-group, .btn-group-vertical {
-    position: relative;
-    display: inline-flex;
-    vertical-align: middle;
-    width: 100% !important;
-
-}
 .search-dropdown.btn-group > .btn, .btn-group-vertical > .btn {
-    text-align: left;
-    
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-}
+  text-align: left !important; }
+
+.search-dropdown.btn-group, .btn-group-vertical {
+  width: 100% !important; }
+
 .search-dropdown .dropdown-toggle::after {
-    display: none;
-}
+  display: none; }
