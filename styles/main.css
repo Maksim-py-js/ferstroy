@@ -32,3 +32,13 @@ li.active-li::before {
   border-radius: 50%;
   margin-right: 5px;
   background: green; }
+
+.custom-breadcrumbs .breadcrumb-item a {
+  color: #fff;
+  text-decoration: none; }
+
+.custom-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  color: #cacaca; }
+
+.custom-breadcrumbs .breadcrumb-item.active {
+  color: #cacaca; }

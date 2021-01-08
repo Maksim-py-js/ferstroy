@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="info">
-
+            <b-breadcrumb variant="transparent" :items="bredcrumbsItems" class="custom-breadcrumbs mb-0 bg-transparent text-light"></b-breadcrumb>
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
                 <b-nav-form>
@@ -44,3 +44,22 @@
         </b-row>
     </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        bredcrumbsItems: [
+          {
+            text: 'Главная',
+            href: '/'
+          },
+          {
+            text: 'Главный Администратор',
+            active: true
+          }
+        ]
+      }
+    }
+  }
+</script>

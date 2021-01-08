@@ -36,3 +36,17 @@ li {
         background: green;
     }
 }
+.custom-breadcrumbs {
+    .breadcrumb-item {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        & + .breadcrumb-item::before {
+            color: #cacaca;
+        }
+        &.active {
+            color: #cacaca;
+        }
+    }
+}

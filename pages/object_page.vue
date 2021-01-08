@@ -103,13 +103,13 @@
                 <div class="p-3 mx-auto">
                     <h2 class="text-center text-uppercase text-white mb-5">Мы на карте</h2>
                     <div class="d-flex">
-                        <img src="@/assets/images/svg/message.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
+                        <img src="@/assets/images/svg/pin.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
                         <div class="text-white" style="max-width: 250px;">
                             Ташкент, Алмазарский район, пересечение улиц МКАД и Шимолий Олмазар
                         </div>
                     </div>
                     <div class="d-flex mt-3">
-                        <img src="@/assets/images/svg/message.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
+                        <img src="@/assets/images/svg/call.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
                         <div class="text-white" style="max-width: 250px;">
                             Телефон : <small>+998</small> 71 200 88 22
                         </div>

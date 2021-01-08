@@ -7,7 +7,6 @@
                 <b-container>
                     <div class="d-flex justify-content-between w-100">
                     <b-navbar-nav class="text-center h-100">
-                        <nuxt-link to="/" class="mr-3 p-2 text-white text-decoration-none">О компании</nuxt-link>
                         <nuxt-link to="/object_page" class="mr-3 p-2 text-white text-decoration-none">Объекты</nuxt-link>
                         <nuxt-link to="/map" class="mr-3 p-2 text-white text-decoration-none">Карта</nuxt-link>
                         <nuxt-link to="/super_admin/statistic" class="mr-3 p-2 text-white text-decoration-none">Администратор</nuxt-link>
