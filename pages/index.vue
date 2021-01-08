@@ -183,31 +183,3 @@ import Footer from '@/components/footer'
     }
   }
 </script>
-
-<style>
-li {
-  list-style: none; 
-}
-li.disactive-li::before {
-  content: "";
-  color: grey;
-  font-weight: bold;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 5px;
-  background: grey;
-}
-li.active-li::before {
-  content: "";
-  color: grey;
-  font-weight: bold;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 5px;
-  background: green;
-}
-</style>

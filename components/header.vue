@@ -11,6 +11,7 @@
                         <nuxt-link to="/object_page" class="mr-3 p-2 text-white text-decoration-none">Объекты</nuxt-link>
                         <nuxt-link to="/map" class="mr-3 p-2 text-white text-decoration-none">Карта</nuxt-link>
                         <nuxt-link to="/super_admin/statistic" class="mr-3 p-2 text-white text-decoration-none">Администратор</nuxt-link>
+                        <nuxt-link to="/parlament/statistic" class="mr-3 p-2 text-white text-decoration-none">Хокимиат</nuxt-link>
                         <b-nav-item-dropdown text="Рус">
                         <b-dropdown-item href="#">Англ</b-dropdown-item>
                         <b-dropdown-item href="#">Узб</b-dropdown-item>
