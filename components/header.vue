@@ -202,7 +202,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     },
     data() {
       return {
-        isActive: true,
+        isActive: false,
 
         mainSlider: {
             arrows: false,
