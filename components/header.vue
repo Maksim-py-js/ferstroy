@@ -223,6 +223,7 @@
             <div class="header__statusConstruction_txt">ЖК Фергана</div>
             <b-button variant="transparent" class="header__lightBtn_md shadow-none">Идут продажи</b-button>  
         </div>
+        <div class="header__mouse"><img src="@/assets/images/svg/mouse.svg"></div>
     </div>
 </template>
 
