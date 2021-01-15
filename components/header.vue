@@ -37,9 +37,6 @@
                             <nuxt-link to="/" class="header__navItem text-decoration-none">Тендеры</nuxt-link>
                             <nuxt-link to="/" class="header__navItem text-decoration-none">Контакты</nuxt-link>
 
-                            <!-- <nuxt-link to="/map" class="header__navItem text-decoration-none">Карта</nuxt-link>
-                            <nuxt-link to="/super_admin/statistic" class="header__navItem text-decoration-none">Администратор</nuxt-link>
-                            <nuxt-link to="/parlament/statistic" class="header__navItem text-decoration-none">Хокимиат</nuxt-link> -->
                             <div class="position-relative header__language">
                                 <div class="header__language_block position-absolute">
                                     <b-button variant="transparent" class="header__language_btn shadow-none">Рус</b-button>
