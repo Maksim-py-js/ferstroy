@@ -27,7 +27,7 @@
                 <b-navbar toggleable="lg" variant="transparent" class="p-0 text-center align-items-center">
                     <div class="d-flex justify-content-between align-items-center w-100" style="margin-top: 20px;">
                         <nuxt-link to="/" class="header__logo">
-                            <img src="@/assets/images/svg/logo/russian.svg">
+                            <img src="@/assets/images/svg/logo/russian-light.svg">
                         </nuxt-link>
                         <b-navbar-nav class="text-center align-items-center h-100">
                             <nuxt-link to="/" class="header__navItem text-decoration-none">О компании</nuxt-link>
@@ -256,7 +256,9 @@ import VSelectize from '@isneezy/vue-selectize'
             slidesToShow: 1,
             autoplay: true,
             autoplaySpeed: 3500,
-            vertical: true
+            vertical: true,
+            speed: 2000,
+            pauseOnHover: false
         },
         roominessItems: [
           {
