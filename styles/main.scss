@@ -279,7 +279,7 @@ li {
     &__searchBar_close {
         height: 0px;
         opacity: 0;
-        transition: 2s;
+        transition: 1s;
         position: absolute;
         top: 0;
         left: 0;
@@ -294,7 +294,7 @@ li {
         left: 0;
         opacity: 1;
         
-        transition: 2s;
+        transition: 1s;
         z-index: 20;
         display: block;
     }
