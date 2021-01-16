@@ -107,14 +107,14 @@
                                             type="number"
                                             placeholder="от"
                                             class="searchBar__input shadow-none"
-                                            style="width: 250px; margin-right: 20px;"
+                                            style="width: 200px; margin-right: 20px;"
                                         ></input>
                                         <input
                                             id="input-1"
                                             type="number"
                                             placeholder="до"
                                             class="searchBar__input shadow-none"
-                                            style="width: 250px;"
+                                            style="width: 200px;"
                                         ></input>
                                     </b-form>
                                 </div>
@@ -163,7 +163,7 @@
                         <div class="d-flex flex-wrap mt-5">
                             <div class="py-1 mt-2">
                                 <div>
-                                    <form >
+                                    <form class="d-flex flex-wrap">
                                         <span class="" v-model="filterHouseState" v-for="item in filterHouse" :key="item.id">                                        
                                             <input type="checkbox" class="searchBar__checkbox" v-model="item.state" :class="item.class" :id="item.id" :name="item.id"></input>
                                             <label class="searchBar__checkbox-label" :for="item.id"><span>{{ item.name }}</span></label>
@@ -177,17 +177,18 @@
                                                 </svg>
                                             </span>
                                         </label> 
+                                        <span style="width: 320px;">
+                                            <v-selectize 
+                                                placeholder="Кол-во квартир на этаже"
+                                                v-model="selected_apartmantPerFloor" 
+                                                :options="apartmantPerFloor"
+                                                class="searchBar__selectize select-300"
+                                                 style="width: 320px; margin: 0;"
+                                            />
+                                        </span>
                                     </form>
                                 </div>    
                             </div>   
-                        <div>
-                            <v-selectize 
-                                placeholder="Кол-во квартир на этаже"
-                                v-model="selected_apartmantPerFloor" 
-                                :options="apartmantPerFloor"
-                                class="searchBar__selectize select-300"
-                            />
-                        </div>
                         </div>
                         <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none mt-3 mb-3">Меньше параметров</b-button>
                         <div class="d-flex justify-content-between mt-4">                    
@@ -248,7 +249,7 @@ import VSelectize from '@isneezy/vue-selectize'
     },
     data() {
       return {
-        SearcBarState: false,
+        SearcBarState: true,
         mainSlider: {
             arrows: false,
             dots: true,

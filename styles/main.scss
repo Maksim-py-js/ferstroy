@@ -296,21 +296,21 @@ li {
         opacity: 0;
         transition: 1s;
         position: absolute;
-        top: 15px;
-        left: -30px;
+        top: 20px;
+        left: 0;
+        width: 100%;
         padding: 0 30px;
-        width: calc(100% + 60px);
         overflow:scroll;
         overflow-x:hidden;      
     }
     &__searchBar_open {
         height: 700px;
-        padding: 0 30px;
-        width: calc(100% + 60px);
+        width: 100%;
         position: absolute;
-        top: 15px;
-        left: -30px;
+        top: 20px;
+        left: 0;
         opacity: 1;
+        padding: 0 30px;
         
         transition: 1s;
         z-index: 20;
