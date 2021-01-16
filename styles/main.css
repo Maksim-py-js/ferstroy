@@ -272,7 +272,7 @@ li.active-li::before {
 .header__searchBar_close {
   height: 0px;
   opacity: 0;
-  transition: 1s;
+  transition: .5s;
   position: absolute;
   top: 20px;
   left: 0;
@@ -289,7 +289,7 @@ li.active-li::before {
   left: 0;
   opacity: 1;
   padding: 0 30px;
-  transition: 1s;
+  transition: .5s;
   z-index: 20;
   display: block; }
 
@@ -807,7 +807,7 @@ ul[data-v-3d1a4f76].slick-dots {
   margin-right: 0; }
 
 .newBuildings {
-  padding: 50px 0 80px 0;
+  padding: 50px 0 40px 0;
   background: #FFFFFF; }
 
 .newBuildings__title {
@@ -1196,3 +1196,72 @@ ul[data-v-3d1a4f76].slick-dots {
 .card_lg__btn:hover {
   background: #FF9800;
   color: #FFFFFF; }
+
+.advantages {
+  padding-top: 40px;
+  margin-bottom: 100px; }
+
+.advantages__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000; }
+
+.advantages__card {
+  background: linear-gradient(180deg, rgba(241, 243, 249, 0) 0%, rgba(241, 243, 249, 0.44) 100%);
+  border: 1px solid #D8DAE1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 410px;
+  height: 333px;
+  padding: 40px 30px 40px 40px; }
+
+.advantages__card_sm {
+  width: 410px;
+  height: 148px;
+  background: rgba(255, 152, 0, 0.05);
+  border: 1px solid #FF9800;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 28px 0 27px 40px; }
+
+.advantages__card_count {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 47px;
+  line-height: 57px;
+  color: #FF9800;
+  margin-bottom: 10px; }
+
+.advantages__card_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000; }
+
+.advantages__card_description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 15px; }
+
+.advantages__card_image {
+  margin-bottom: 30px;
+  height: 78px; }
+
+.advantages__cards .advantages__card,
+.advantages__cards .advantages__card_sm {
+  margin-right: 30px;
+  margin-top: 30px; }
+
+.advantages__cards .advantages__card:nth-child(3n),
+.advantages__cards .advantages__card_sm:nth-child(3n) {
+  margin-right: 0px; }

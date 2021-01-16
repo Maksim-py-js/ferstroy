@@ -249,7 +249,7 @@ import VSelectize from '@isneezy/vue-selectize'
     },
     data() {
       return {
-        SearcBarState: true,
+        SearcBarState: false,
         mainSlider: {
             arrows: false,
             dots: true,
