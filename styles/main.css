@@ -181,7 +181,7 @@ li.active-li::before {
   right: 43px; }
 
 .header__selectProperty_btn {
-  margin-top: 220px;
+  padding-top: 220px;
   text-align: center; }
 
 .header__selectProperty_name {
@@ -274,18 +274,20 @@ li.active-li::before {
   opacity: 0;
   transition: 1s;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 15px;
+  left: -30px;
+  padding: 0 30px;
+  width: calc(100% + 60px);
   overflow: scroll;
   overflow-x: hidden; }
 
 .header__searchBar_open {
-  height: 100vh !important;
-  width: 100%;
+  height: 700px;
+  padding: 0 30px;
+  width: calc(100% + 60px);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: -30px;
   opacity: 1;
   transition: 1s;
   z-index: 20;
