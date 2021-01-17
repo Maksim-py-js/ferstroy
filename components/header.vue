@@ -1,14 +1,5 @@
 <template>
     <div class="position-relative w-100">
-
-        <div class="preloader">
-            <div class="preloader__row">
-                <div class="preloader__item"></div>
-                <div class="preloader__item"></div>
-            </div>
-        </div>
-
-
         <VueSlickCarousel v-bind="mainSlider" class="p-0 m-0 border-0 position-absolute header__slider" style="">
             <div class="header__slide">
                 <img src="@/assets/images/png/slide_1-min.png" alt="">
@@ -252,15 +243,6 @@ import vClickOutside from 'v-click-outside'
     components: { 
         VueSlickCarousel,
         VSelectize
-    },
-    mounted() {
-        window.onload = function () {
-            document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-            }, 500);
-        }
     },
     methods: {
         openSearsearchBar__chckbxar(SearcBarState) {
