@@ -1,7 +1,7 @@
 <template>
 <div>
   <Header />  
-  <div class="bestsellers">
+  <div id="bestsellers" class="bestsellers">
     <div class="container_1290">
       <div class="d-flex">
         <div class="bestsellers__title">Хиты продаж</div>        

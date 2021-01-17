@@ -223,7 +223,7 @@
             <div class="header__statusConstruction_txt">ЖК Фергана</div>
             <b-button variant="transparent" class="header__lightBtn_md shadow-none">Идут продажи</b-button>  
         </div>
-        <div class="header__mouse"><img src="@/assets/images/svg/mouse.svg"></div>
+        <div class="header__mouse"><b-button variant="transparent" class="p-0 m-0 shadow-none" @click="moveToBuildings"><img src="@/assets/images/svg/mouse.svg"></b-button></div>
     </div>
 </template>
 
@@ -245,6 +245,13 @@ import VSelectize from '@isneezy/vue-selectize'
         closeSearsearchBar__chckbxar(SearcBarState) {
             this.SearcBarState = false;
             console.log(SearcBarState);
+        },
+        moveToBuildings () {
+            const $bestsellers = document.getElementById('bestsellers');
+            $bestsellers.scrollIntoView({ 
+                block: 'nearest',
+                behavior: 'smooth'
+            });
         }
     },
     data() {
