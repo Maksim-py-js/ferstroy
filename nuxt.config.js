@@ -24,7 +24,8 @@ export default {
   plugins: [
     '@plugins/bootstrap-vue',
     '@plugins/chart',
-    { src: '~/plugins/vue-notifications', ssr:  false }
+    { src: '~/plugins/vue-notifications', ssr:  false },
+    { src: "@/plugins/v-click-outside", ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

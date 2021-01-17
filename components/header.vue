@@ -1,5 +1,14 @@
 <template>
     <div class="position-relative w-100">
+
+        <div class="preloader">
+            <div class="preloader__row">
+                <div class="preloader__item"></div>
+                <div class="preloader__item"></div>
+            </div>
+        </div>
+
+
         <VueSlickCarousel v-bind="mainSlider" class="p-0 m-0 border-0 position-absolute header__slider" style="">
             <div class="header__slide">
                 <img src="@/assets/images/png/slide_1-min.png" alt="">
@@ -22,7 +31,7 @@
                 <div class="header__slide_blackout"></div>
             </div>
         </VueSlickCarousel>
-        <div class="header">
+        <div class="header" v-click-outside="externalClick">
             <div class="container_1290 position-relative">
                 <b-navbar toggleable="lg" variant="transparent" class="p-0 text-center align-items-center">
                     <div class="d-flex justify-content-between align-items-center w-100" style="margin-top: 20px;">
@@ -234,9 +243,25 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 import 'selectize/dist/css/selectize.css'
 import VSelectize from '@isneezy/vue-selectize'
+import vClickOutside from 'v-click-outside'
 
   export default {
-    components: { VueSlickCarousel, VSelectize },
+    directives: {
+      clickOutside: vClickOutside.directive
+    },
+    components: { 
+        VueSlickCarousel,
+        VSelectize
+    },
+    mounted() {
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    },
     methods: {
         openSearsearchBar__chckbxar(SearcBarState) {
             this.SearcBarState = true;
@@ -252,6 +277,9 @@ import VSelectize from '@isneezy/vue-selectize'
                 block: 'nearest',
                 behavior: 'smooth'
             });
+        },
+        externalClick (SearcBarState) {
+            this.SearcBarState = false
         }
     },
     data() {
