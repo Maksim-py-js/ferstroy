@@ -54,7 +54,7 @@
             </div>     
             <div class="container_1290 position-relative">
                 <div v-bind:class="{ header__searchBar_open: SearcBarState }" class="header__searchBar_close bg-white">   
-                    <div class="container_1290" style="padding: 20px 0;">
+                    <div class="container_1290" style="padding: 18px 0;">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="m-0 h-100 searchBar__title">Поиск новостроек</div>
                             <b-button 
@@ -63,21 +63,21 @@
                                 class="header__searchBar_closeBtn align-items-center p-0 m-0 shadow-none d-flex algn-items-center"
                             >
                                 <span>Скрыть поиск</span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 18px;">
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 15px;">
                                     <path d="M16.772 0L19.9809 3.21199L3.20893 20L0 16.788L16.772 0Z"/>
                                     <path d="M3.22801 0L0.0190783 3.21199L16.7911 20L20 16.788L3.22801 0Z"/>
                                 </svg>   
                             </b-button>
                         </div>
                     </div>
-                    <div class="container_1290" style="padding: 10px 0 0 0;">
+                    <div class="container_1290">
                         <div>                        
                             <input type="text" placeholder="Название новостройки или застройщика" class="searchBar__input"></input>
                         </div>
                         <div class="d-flex flex-wrap justify-content-between">
                             <div>
                                 <div class="searchBar__title_sm">Расположение</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex" style="margin-top: 18px;">
                                     <v-selectize 
                                         placeholder="Город"
                                         v-model="selected_locationOptions.country" 
@@ -100,7 +100,7 @@
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Цена за квартиру</div>
-                                <div class="d-flex mt-4">          
+                                <div class="d-flex" style="margin-top: 18px;">          
                                     <b-form class="d-flex">
                                         <input
                                             id="input-1"
@@ -123,7 +123,7 @@
                         <div class="d-flex flex-wrap">
                             <div>
                                 <div class="searchBar__title_sm">Комнатность</div>
-                                <div class="d-flex custom-radio-label mt-4">
+                                <div class="d-flex custom-radio-label" style="margin-top: 18px;">
                                     <div class="searchBar__txtRoom">Студии</div>
                                     <div style="margin-right: 20px;" v-for="item in roominessItems" :key="item.id">
                                         <input 
@@ -138,12 +138,12 @@
                                         ></input>
                                         <label :for="item.id" class="searchBar__radio_label"><span>{{ item.size }}</span></label> 
                                     </div>
-                                    <div class="searchBar__txtRoom" style="padding: 19px 56px;">Пентхаус</div>
+                                    <div class="searchBar__txtRoom" style="padding: 13px 56px;">Пентхаус</div>
                                 </div>  
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Срок сдачи</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex" style="margin-top: 18px;">
                                     <v-selectize 
                                         placeholder="Любой"
                                         v-model="selected_deadline.deadline" 
@@ -160,7 +160,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-wrap mt-5">
+                        <div class="d-flex flex-wrap" style="margin-top: 15px;">
                             <div class="py-1 mt-2">
                                 <div>
                                     <form class="d-flex flex-wrap">
@@ -183,15 +183,15 @@
                                                 v-model="selected_apartmantPerFloor" 
                                                 :options="apartmantPerFloor"
                                                 class="searchBar__selectize select-300"
-                                                 style="width: 320px; margin: 0;"
+                                                style="width: 320px; margin: 0;"
                                             />
                                         </span>
                                     </form>
                                 </div>    
                             </div>   
                         </div>
-                        <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none mt-3 mb-3">Меньше параметров</b-button>
-                        <div class="d-flex justify-content-between mt-4">                    
+                        <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none" style="margin: 15px 0;">Меньше параметров</b-button>
+                        <div class="d-flex justify-content-between" style="margin-top: 12px;">                    
                             <div class="d-flex flex-wrap">
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Посмотреть 146 ЖКХ</b-button>
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Новостройки премиум-класса</b-button>
@@ -267,7 +267,7 @@ import vClickOutside from 'v-click-outside'
     },
     data() {
       return {
-        SearcBarState: false,
+        SearcBarState: true,
         mainSlider: {
             arrows: false,
             dots: true,
@@ -275,7 +275,7 @@ import vClickOutside from 'v-click-outside'
             autoplay: true,
             autoplaySpeed: 3500,
             vertical: true,
-            speed: 2000,
+            speed: 1400,
             pauseOnHover: false
         },
         roominessItems: [
