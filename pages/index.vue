@@ -3,7 +3,7 @@
   <div id="bestsellers" class="bestsellers">
     <div class="container_1290">
       <div class="d-flex">
-        <div class="bestsellers__title">Хиты продаж</div>        
+        <div class="main__title">Хиты продаж</div>        
         <nuxt-link to="/" class="bestsellers__seeAll text-decoration-none">367</nuxt-link>
       </div>
       <div class="d-flex flex-wrap bestsellers__cards">
@@ -447,7 +447,7 @@
         </div>
       </div>
     </div>
-    <div class="newBuildings__title">Все новостройки</div>        
+    <div class="main__title">Все новостройки</div>        
     <div class="d-flex flex-wrap newBuildings__cards">
       <div class="card">
         <div class="card__image">
@@ -885,7 +885,7 @@
     </div>
   </div>
   <div class="advantages container_1290">
-    <div class="advantages__title">Наши приемущества</div>
+    <div class="main__title">Наши приемущества</div>
     <div class="d-flex flex-wrap advantages__cards">
       <div class="advantages__card_sm">
         <div class="advantages__card_count">2274</div> 

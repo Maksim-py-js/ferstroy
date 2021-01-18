@@ -203,7 +203,7 @@
                                 </b-button>
                             </div>
                             <div>
-                                <b-button variant="transparent" class="searchBar__confirmBtn shadow-none">                          
+                                <b-button variant="transparent" class="searchBar__confirmBtn shadow-none" to="/search_result">                          
                                     Найти
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.37201 14.7559C8.88978 14.7559 10.2919 14.2929 11.4628 13.5118L15.6981 17.7505C16.0307 18.0832 16.5799 18.0832 16.9267 17.7505L17.7507 16.9259C18.0831 16.5931 18.0831 16.0434 17.7507 15.6962L13.5009 11.472C14.2813 10.3002 14.744 8.89693 14.744 7.37794C14.744 3.31284 11.4338 0 7.37201 0C3.31018 0 0 3.31284 0 7.37794C0 11.4429 3.29572 14.7559 7.37201 14.7559ZM7.37201 2.89331C9.84381 2.89331 11.853 4.90416 11.853 7.37794C11.853 9.85172 9.84381 11.8626 7.37201 11.8626C4.90022 11.8626 2.89099 9.85172 2.89099 7.37794C2.89099 4.90416 4.90022 2.89331 7.37201 2.89331Z"/>
@@ -234,6 +234,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 import 'selectize/dist/css/selectize.css'
 import VSelectize from '@isneezy/vue-selectize'
+
 import vClickOutside from 'v-click-outside'
 
   export default {
