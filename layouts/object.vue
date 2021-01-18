@@ -5,12 +5,19 @@
           <div class="preloader__item"></div>
           <div class="preloader__item"></div>
       </div>
-    </div>     
-    <Nuxt />    
+    </div>    
+    <ObjectHeader />  
+
+    <Nuxt /> 
+       
+    <Footer />
   </div>
 </template>
 
 <script>
+import ObjectHeader from '@/components/main/object_header'
+import Footer from '@/components/main/footer'
+
 export default {
   mounted() {
     window.onload = function () {

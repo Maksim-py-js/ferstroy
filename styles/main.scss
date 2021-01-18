@@ -62,6 +62,125 @@ li {
 .header {
     height: 100vh;
     min-height: 940px;
+    &_sm {
+        height: 120px;
+        &__slide {
+            height: 120px !important;
+            position: relative;
+            img {
+                height: 120px !important; 
+                width: 100% !important;  
+                object-fit: cover;
+                object-position: 50% 0;
+            }
+            &_blackoutTop {
+                position: absolute;
+                top: 0;
+                height: 120px !important;
+                width: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0) 50%);
+            }
+            &_blackout {
+                position: absolute;
+                top: 0;
+                height: 120px !important;
+                width: 100%;
+                // background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 34.9%);
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+    &_object {
+        &__slide {
+            height: 100vh !important;
+            min-height: 940px !important;
+            position: relative;
+            img {
+                height: 100vh !important; 
+                min-height: 940px !important; 
+                width: 100% !important;  
+                object-fit: cover;
+            }
+            &_blackoutTop {
+                position: absolute;
+                height: 100vh !important;
+                min-height: 940px !important; 
+                width: 100%;
+                top: 0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+            &_blackout {
+                position: absolute;
+                height: 100vh !important;
+                min-height: 940px !important; 
+                width: 100%;
+                top: 0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 34.9%);
+            }
+        }
+        &__selectProperty {
+            &_title {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 37px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-top: 215px;
+            }
+            &_btn {
+                padding-top: 68px; 
+                text-align: center;
+            }
+            &_name {
+                font-family: "Noto Serif";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 82px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+                width: 100%;
+                max-width: 720px;
+                margin: 0 auto;
+                padding-top: 22px;
+            }
+        }
+        &__lightBtn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.61);
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 29px 75px;
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            &:hover {
+                background: rgba(255, 152, 0, 0.5);
+                border: 2px solid #FF9800;
+                color: #fff;
+            }
+            &:focus {
+                background: transparent;
+                border: 2px solid #FF9800;
+                color: #fff;
+            }
+        }
+    }
     &__slider {
         width: 100%; 
         height: 100vh !important;
@@ -1463,6 +1582,7 @@ ul[data-v-3d1a4f76].slick-dots {
     }    
     &__middle {
         padding: 23px 0;
+        margin-top: 30px;
         border-top: 1px solid rgba(196, 196, 196, 0.3); 
         border-bottom: 1px solid rgba(196, 196, 196, 0.3); 
     }

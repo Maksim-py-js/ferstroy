@@ -1,6 +1,5 @@
 <template>
-<div>
-  <Header />  
+<div> 
   <div id="bestsellers" class="bestsellers">
     <div class="container_1290">
       <div class="d-flex">
@@ -945,16 +944,14 @@
         <div class="advantages__card_description">Подберите квартиру из 11 912 вариантов в 207 жилых комплексах, готовых и строящихся</div>
       </div>  
     </div>
-  </div>
-  <Footer />  
+  </div> 
 </div>
 </template>
 
 <script>
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-
   export default {
+    layout: 'home',
+    
     data() {
       return {
         pagination: [
@@ -990,7 +987,7 @@ import Footer from '@/components/footer'
             value: '20'
           }
         ],        
-        selected_pagination: '', 
+        selected_pagination: 1, 
       }
     }
   }

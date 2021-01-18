@@ -1,29 +1,5 @@
 <template>
     <div>
-        <div class="position-relative pb-5">
-            <img src="@/assets/images/jpg/large.jpg" class="position-absolute" style="width: 100%; height: 100%; object-fit: cover; z-index: -1;" alt="">
-            <b-navbar toggleable="lg" type="dark" variant="light" class="px-3 py-2 text-center align-items-center">     
-                <div class="d-flex justify-content-between w-100">
-                    <b-navbar-nav class="text-center h-100">
-                        <nuxt-link to="/" class="mr-3 p-2 text-dark text-decoration-none">Квартиры</nuxt-link>
-                        <nuxt-link to="/" class="mr-3 p-2 text-dark text-decoration-none">Планировки</nuxt-link>
-                        <nuxt-link to="/" class="mr-3 p-2 text-dark text-decoration-none">Информация о компексе</nuxt-link>
-                        <nuxt-link to="/" class="mr-3 p-2 text-dark text-decoration-none">Связаться с нами</nuxt-link>
-                    </b-navbar-nav>
-                    <div>
-                        
-                        <b-button variant="warning">Оставить заявку</b-button>
-                    </div>
-                </div>
-            </b-navbar>
-            <b-container style="margin: 250px auto;">
-                <h6 class="text-white text-center">Жилой комплекс</h6>
-                <h1 class="text-white text-center">Parisien</h1>
-                <div class="text-center mt-4 mb-5">
-                    <b-button variant="warning">Выбрать квартиру</b-button>
-                </div>
-            </b-container>
-        </div>
         <div class="bg-warning py-5">
             <b-container>
                 <div class="text-center text-uppercase"><h4 class="m-0 font-weight-bold">особенности жилого комплекса</h4></div>
@@ -126,13 +102,11 @@
                 </div>
             </div>
         </b-container>
-        <Footer />
     </div>
 </template>
 
 <script>
-import Footer from '@/components/footer'
-
-  export default {
+  export default {    
+    layout: 'object'
   }
 </script>
