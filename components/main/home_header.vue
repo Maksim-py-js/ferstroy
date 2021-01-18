@@ -54,7 +54,7 @@
             </div>     
             <div class="container_1290 position-relative">
                 <div v-bind:class="{ header__searchBar_open: SearcBarState }" class="header__searchBar_close bg-white">   
-                    <div class="container_1290" style="padding: 18px 0;">
+                    <div class="container_1290" style="padding: 20px 0;">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="m-0 h-100 searchBar__title">Поиск новостроек</div>
                             <b-button 
@@ -77,7 +77,7 @@
                         <div class="d-flex flex-wrap justify-content-between">
                             <div>
                                 <div class="searchBar__title_sm">Расположение</div>
-                                <div class="d-flex" style="margin-top: 18px;">
+                                <div class="d-flex" style="margin-top: 20px;">
                                     <v-selectize 
                                         placeholder="Город"
                                         v-model="selected_locationOptions.country" 
@@ -100,7 +100,7 @@
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Цена за квартиру</div>
-                                <div class="d-flex" style="margin-top: 18px;">          
+                                <div class="d-flex" style="margin-top: 20px;">          
                                     <b-form class="d-flex">
                                         <input
                                             id="input-1"
@@ -123,7 +123,7 @@
                         <div class="d-flex flex-wrap">
                             <div>
                                 <div class="searchBar__title_sm">Комнатность</div>
-                                <div class="d-flex custom-radio-label" style="margin-top: 18px;">
+                                <div class="d-flex custom-radio-label" style="margin-top: 20px;">
                                     <div class="searchBar__txtRoom">Студии</div>
                                     <div style="margin-right: 20px;" v-for="item in roominessItems" :key="item.id">
                                         <input 
@@ -143,7 +143,7 @@
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Срок сдачи</div>
-                                <div class="d-flex" style="margin-top: 18px;">
+                                <div class="d-flex" style="margin-top: 20px;">
                                     <v-selectize 
                                         placeholder="Любой"
                                         v-model="selected_deadline.deadline" 
@@ -160,7 +160,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-wrap" style="margin-top: 15px;">
+                        <div class="d-flex flex-wrap" style="margin-top: 32px;">
                             <div class="py-1 mt-2">
                                 <div>
                                     <form class="d-flex flex-wrap">
@@ -190,8 +190,8 @@
                                 </div>    
                             </div>   
                         </div>
-                        <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none" style="margin: 15px 0;">Меньше параметров</b-button>
-                        <div class="d-flex justify-content-between" style="margin-top: 12px;">                    
+                        <!-- <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none" style="margin: 15px 0;">Меньше параметров</b-button> -->
+                        <div class="d-flex justify-content-between" style="margin-top: 20px;">                    
                             <div class="d-flex flex-wrap">
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Посмотреть 146 ЖКХ</b-button>
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Новостройки премиум-класса</b-button>
