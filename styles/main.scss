@@ -700,6 +700,14 @@ ol.breadcrumb {
     /* End Radio buttons for number available and disable */
     /* Checkboxes for number available and disable */
     &__chckbx {
+        &-120,
+        &-120+label::before {
+            width: 120px !important;
+        }
+        &-130,
+        &-130+label::before {
+            width: 130px !important;
+        }
         &-160,
         &-160+label::before {
             width: 160px !important;
@@ -951,6 +959,11 @@ ol.breadcrumb {
         &.select-300.selectize-control {
             .selectize-input {
                 width: 300px !important;
+            }    
+        }
+        &.select-260.selectize-control {
+            .selectize-input {
+                width: 260px !important;
             }    
         }
         &.select-250.selectize-control {
@@ -1818,14 +1831,375 @@ ul[data-v-3d1a4f76].slick-dots {
     }
     &__leftRow {
         min-width: 300px;
-        height: 946px;
+        height: 100%;
         margin-right: 30px;
-        background: #FFFFFF;
-        border: 1px solid #D2DFE8;
-        box-sizing: border-box;
-        border-radius: 3px;
         margin-top: 30px;
-        padding: 20px;
+        &Card {
+            min-width: 300px;
+            height: 100%;
+            background: #FFFFFF;
+            border: 1px solid #D2DFE8;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 20px;
+            &_sm {
+                width: 300px;
+
+                background: #FFFFFF;
+                border: 1px solid #D2DFE8;
+                box-sizing: border-box;
+                border-radius: 3px;
+                margin-top: 30px;
+                .leftRowCard {
+                    padding: 20px;                    
+                    border-bottom: 1px solid #D2DFE8;
+                    &__title {
+                        padding: 20px;
+                        border-bottom: 1px solid #D2DFE8;
+                        &_text {
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #000000;
+                        }
+                        &_image {}
+                    }
+                    &__image {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 3px;
+                        margin-right: 20px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 3px;
+                        }
+                    }
+                    &__description {}
+                    &__country {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #7E8E9D;
+                    }
+                    &__name {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000000;
+                    }
+                }
+                &_btn {
+                    border: 1px solid #D2DFE8;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    padding: 14px 40px 14px 40px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #7E8E9D;
+
+                    &:hover {
+                        border: 1px solid #FF9800;
+                    }
+                    &:focus {
+                        color: #FF9800;
+                        border: 1px solid #FF9800;
+                        svg {
+                            fill: #FF9800;
+                            color: #FF9800;
+                        }
+                    }
+                    svg {
+                        fill: #7E8E9D;
+                        color: #7E8E9D;
+                        margin-left: 19px;
+                    }
+                }
+            }
+        }
+        &_mainTitle {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            margin-top: 22px;
+            margin-bottom: 15px;
+        }
+        &_title {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 16px;
+        }
+        &_input {
+            background: #FFFFFF;
+            border: 1px solid #E5EBEF;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 13px 20px 13px 47px;
+            width: 100%;
+            outline: none;
+            margin-top: 5px;
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #7E8E9D;
+                &::placeholder {
+                color: #7E8E9D;
+            }
+        }
+        &_selectize {
+            &.selectize-control {
+                .selectize-input {
+                    width: 200px !important;
+                    height: 100% !important;
+                    max-height: 50px !important;
+
+                    outline: none !important;
+                    margin-right: 20px !important;   
+                    padding: 14px 35px 14px 20px !important;
+                    border: 1px solid #D2DFE8 !important;   
+                    border-radius: 3px !important; 
+                    background: url("../assets/images/png/select-arrow.png") no-repeat 93.3% 50% !important;
+                    box-shadow: none !important;
+
+                    font-family: "Montserrat" !important;
+                    font-style: normal !important;
+                    font-weight: 500 !important;
+                    font-size: 15px !important;
+                    line-height: 18px !important;
+                    color: #7E8E9D !important;
+                    white-space: nowrap !important;
+                    overflow: hidden !important;       
+                    &:after {
+                        display: none !important;
+                    }
+                    &:hover {
+                        border: 1px solid #77C85B !important;   
+                    }
+                    input {
+                        font-family: "Montserrat" !important;
+                        font-style: normal !important;
+                        font-weight: 500 !important;
+                        font-size: 15px !important;
+                        line-height: 18px !important;
+                        color: #7E8E9D !important;
+                        white-space: nowrap !important;
+                        width: 100% !important;
+                    }
+                    .item {
+                        position: absolute;
+                        max-width: 70% !important;
+                        overflow: hidden !important;        
+                        text-overflow: ellipsis !important;
+                    }
+                } 
+                .selectize-dropdown {
+                    position: absolute !important;
+                    top: 0px !important;
+
+                    border: 1px solid #D2DFE8 !important;
+                    border-radius: 3px !important;
+                    box-shadow: none !important;
+                    width: 260px !important;
+
+                    font-family: "Montserrat" !important;
+                    font-style: normal !important;
+                    font-weight: 500 !important;
+                    font-size: 15px !important;
+                    line-height: 18px !important;
+                    color: #7E8E9D !important;
+                    padding: 14px 0 0 12px;
+                    background: #fff url("../assets/images/png/select-arrow.png") no-repeat 93.3% 26px !important;
+                    .active {
+                        color: #77C85B !important;
+                        background-color: transparent !important;
+                        cursor: pointer;
+                    }
+                    .option {
+                        margin-bottom: 19px;
+                    }
+                    /* width */
+                    ::-webkit-scrollbar {
+                        width: 3px;
+                    }
+
+                    /* Track */
+                    ::-webkit-scrollbar-track {
+                        background: white;
+                    }
+
+                    /* Handle */
+                    ::-webkit-scrollbar-thumb {
+                        background: #77C85B;
+                    }
+                }
+            }
+            &.select-300.selectize-control {
+                .selectize-input {
+                    width: 300px !important;
+                }    
+            }
+            &.select-260.selectize-control {
+                .selectize-input {
+                    width: 260px !important;
+                }    
+            }
+            &.select-250.selectize-control {
+                .selectize-input {
+                    width: 250px !important;
+                }    
+            }
+            &.select-190.selectize-control {
+                .selectize-input {
+                    width: 190px !important;
+                }    
+            }
+        }
+        &__txtRoom {
+            border: 1px solid #D2DFE8;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 16px 9px;
+            height: 50px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #7E8E9D;
+            margin-right: 6px;
+        }
+        &_radio {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            width: 40px;
+            height: 50px;
+            &-disabled {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                width: 40px;
+                height: 50px;
+            }
+            label {
+                width: 40px;
+                height: 50px;
+                background: transparent;
+            }
+            &:checked+label::before {
+                border: 1px solid #77C85B;    
+            }
+            &:checked+label.searchResult__leftRow_radio_label span {
+                color: #77C85B;    
+            }
+            &+label,
+            &-disabled+label {
+                display: inline-flex;
+                align-items: center;
+                user-select: none;
+                cursor: pointer;
+                position: relative;
+            }
+            &+label::before {
+                content: '';
+                display: inline-block;
+                width: 40px;
+                height: 50px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border-radius: 3px;
+                border: 1px solid #D2DFE8;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: #ffffff;
+            }
+            &_label span {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                color: #7E8E9D;
+            }
+        }
+        &_squareInput {
+            margin-bottom: 13px;            
+        }
+        &_confirmBtn {
+            background: #77C85B;
+            border-radius: 3px;
+            padding: 13px 81px 13px 81px;
+            margin-top: 22px;
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
+            svg {
+                fill: white;
+                color: white;
+                margin-left: 10px;
+            }
+            &:hover {
+                background: #FF9800;
+                color: #FFFFFF;
+            }
+        }
+        &_onMap {
+            width: 260px;
+            height: 80px;
+            background: #77C85B;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+    }
+    .searcchOnMap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &__text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+        }
     }
     &__cards {
         .card {
@@ -1835,5 +2209,104 @@ ul[data-v-3d1a4f76].slick-dots {
             }
         }
     }
+
+    &__chckbx {
+        &-120,
+        &-120+label::before {
+            width: 120px !important;
+        }
+        &-130,
+        &-130+label::before {
+            width: 130px !important;
+            margin-right: 2px !important;
+        }
+    }
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 150px;
+        height: 50px;
+        &+label{
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            
+            margin: 0 0 5px 0;
+            
+        }
+        &+label::before {
+            content: '';
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-radius: 3px;
+            border: 1px solid #D2DFE8;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #fff;
+        }
+        &:checked+label::before,
+        &:hover+label::before {  
+            border: 1px solid #77C85B;   
+        }
+        &:hover+label.searchResult__checkbox-label span {
+            color: #77C85B;
+            svg {           
+                color: #77C85B;
+                fill: #77C85B;
+            }
+        }
+        &-label {
+            position: relative;
+        }
+        &-label span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #7E8E9D;
+            white-space: nowrap;
+            svg {
+                color: #99A3BB;
+                fill: #99A3BB;
+                margin-right: 12px;
+            }
+        }
+    }
+    
+}
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child),
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+    height: 48px;
+}
+
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+    text-align: right;
+}
+.form-control {
+    font-family: "Montserrat" !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+
+    color: #7E8E9D !important;
+
+}
+.input-group {
+    max-width: 213px;
+    border: 1px solid #D2DFE8;
+    border-radius: 3px;
 }
 

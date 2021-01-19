@@ -267,7 +267,7 @@ import vClickOutside from 'v-click-outside'
     },
     data() {
       return {
-        SearcBarState: true,
+        SearcBarState: false,
         mainSlider: {
             arrows: false,
             dots: true,
