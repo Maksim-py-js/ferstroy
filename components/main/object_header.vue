@@ -45,21 +45,21 @@
                                 class="header__searchBar_closeBtn align-items-center p-0 m-0 shadow-none d-flex algn-items-center"
                             >
                                 <span>Скрыть поиск</span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 18px;">
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 15px;">
                                     <path d="M16.772 0L19.9809 3.21199L3.20893 20L0 16.788L16.772 0Z"/>
                                     <path d="M3.22801 0L0.0190783 3.21199L16.7911 20L20 16.788L3.22801 0Z"/>
                                 </svg>   
                             </b-button>
                         </div>
                     </div>
-                    <div class="container_1290" style="padding: 10px 0 0 0;">
+                    <div class="container_1290">
                         <div>                        
                             <input type="text" placeholder="Название новостройки или застройщика" class="searchBar__input"></input>
                         </div>
                         <div class="d-flex flex-wrap justify-content-between">
                             <div>
                                 <div class="searchBar__title_sm">Расположение</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex" style="margin-top: 20px;">
                                     <v-selectize 
                                         placeholder="Город"
                                         v-model="selected_locationOptions.country" 
@@ -82,7 +82,7 @@
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Цена за квартиру</div>
-                                <div class="d-flex mt-4">          
+                                <div class="d-flex" style="margin-top: 20px;">          
                                     <b-form class="d-flex">
                                         <input
                                             id="input-1"
@@ -105,7 +105,7 @@
                         <div class="d-flex flex-wrap">
                             <div>
                                 <div class="searchBar__title_sm">Комнатность</div>
-                                <div class="d-flex custom-radio-label mt-4">
+                                <div class="d-flex custom-radio-label" style="margin-top: 20px;">
                                     <div class="searchBar__txtRoom">Студии</div>
                                     <div style="margin-right: 20px;" v-for="item in roominessItems" :key="item.id">
                                         <input 
@@ -120,12 +120,12 @@
                                         ></input>
                                         <label :for="item.id" class="searchBar__radio_label"><span>{{ item.size }}</span></label> 
                                     </div>
-                                    <div class="searchBar__txtRoom" style="padding: 19px 56px;">Пентхаус</div>
+                                    <div class="searchBar__txtRoom" style="padding: 13px 56px;">Пентхаус</div>
                                 </div>  
                             </div>
                             <div>
                                 <div class="searchBar__title_sm">Срок сдачи</div>
-                                <div class="d-flex mt-4">
+                                <div class="d-flex" style="margin-top: 20px;">
                                     <v-selectize 
                                         placeholder="Любой"
                                         v-model="selected_deadline.deadline" 
@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex flex-wrap mt-5">
+                        <div class="d-flex flex-wrap" style="margin-top: 32px;">
                             <div class="py-1 mt-2">
                                 <div>
                                     <form class="d-flex flex-wrap">
@@ -165,15 +165,15 @@
                                                 v-model="selected_apartmantPerFloor" 
                                                 :options="apartmantPerFloor"
                                                 class="searchBar__selectize select-300"
-                                                 style="width: 320px; margin: 0;"
+                                                style="width: 320px; margin: 0;"
                                             />
                                         </span>
                                     </form>
                                 </div>    
                             </div>   
                         </div>
-                        <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none mt-3 mb-3">Меньше параметров</b-button>
-                        <div class="d-flex justify-content-between mt-4">                    
+                        <!-- <b-button variant="transparent" class="searchBar__lessParamsBtn shadow-none" style="margin: 15px 0;">Меньше параметров</b-button> -->
+                        <div class="d-flex justify-content-between" style="margin-top: 20px;">                    
                             <div class="d-flex flex-wrap">
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Посмотреть 146 ЖКХ</b-button>
                                 <b-button variant="transparent" class="searchBar__sortingBtn shadow-none">Новостройки премиум-класса</b-button>
@@ -185,7 +185,7 @@
                                 </b-button>
                             </div>
                             <div>
-                                <b-button variant="transparent" class="searchBar__confirmBtn shadow-none">                          
+                                <b-button variant="transparent" class="searchBar__confirmBtn shadow-none" to="/search_result">                          
                                     Найти
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.37201 14.7559C8.88978 14.7559 10.2919 14.2929 11.4628 13.5118L15.6981 17.7505C16.0307 18.0832 16.5799 18.0832 16.9267 17.7505L17.7507 16.9259C18.0831 16.5931 18.0831 16.0434 17.7507 15.6962L13.5009 11.472C14.2813 10.3002 14.744 8.89693 14.744 7.37794C14.744 3.31284 11.4338 0 7.37201 0C3.31018 0 0 3.31284 0 7.37794C0 11.4429 3.29572 14.7559 7.37201 14.7559ZM7.37201 2.89331C9.84381 2.89331 11.853 4.90416 11.853 7.37794C11.853 9.85172 9.84381 11.8626 7.37201 11.8626C4.90022 11.8626 2.89099 9.85172 2.89099 7.37794C2.89099 4.90416 4.90022 2.89331 7.37201 2.89331Z"/>

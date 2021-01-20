@@ -1,107 +1,355 @@
 <template>
     <div>
-        <div class="bg-warning py-5">
-            <b-container>
-                <div class="text-center text-uppercase"><h4 class="m-0 font-weight-bold">особенности жилого комплекса</h4></div>
-                <div class="d-flex justify-content-center mt-5">
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">6.5</h1>
-                        <span class="text-secondary ml-1"><small>гектара</small></span>
+    <div class=""></div>
+
+        <div class="object__card_orange">
+            <div class="container_1290">
+                <div class="object__card_title">Особености жилого комплекса</div>
+                <div class="object__card_row d-flex">
+                    <div class="object__card_column">
+                        <div class="object__card_count">7</div>                    
+                        <div class="object__card_name">Гектар</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">4</h1>
-                        <span class="text-secondary ml-1"><small>дома</small></span>
+                    <div class="object__card_column">
+                        <div class="object__card_count">6</div>                    
+                        <div class="object__card_name">Домов</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">8</h1>
-                        <span class="text-secondary ml-1"><small>этажей</small></span>
+                    <div class="object__card_column">
+                        <div class="object__card_count">8</div>                    
+                        <div class="object__card_name">Этажей</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">576</h1>
-                        <span class="text-secondary ml-1"><small>квартир</small></span>
+                    <div class="object__card_column">
+                        <div class="object__card_count">576</div>                    
+                        <div class="object__card_name">Квартир</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">до1000</h1>
-                        <span class="text-secondary ml-1"><small>парковочных мест</small></span>
-                    </div>
+                    <div class="object__card_column">
+                        <div class="object__card_count">1000</div>                    
+                        <div class="object__card_name">Парковочных мест</div>
+                    </div>                
                 </div>
-            </b-container>
-        </div>
+            </div>
+        </div>    
         <div>
-            <img src="@/assets/images/png/object1.png" class="w-100" style="height: 100%; max-height: 802px;" alt="">
+            <img src="@/assets/images/png/object1.png" class="w-100" style="height: 100%; max-height: 1080px;" alt="">
         </div>
-        <div class="bg-warning py-5">
-            <b-container>
-                <div class="text-center text-uppercase"><h4 class="m-0 font-weight-bold">особенности квартир</h4></div>
-                <div class="d-flex justify-content-center mt-5">
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">27+</h1>
-                        <span class="text-secondary ml-1"><small>Lorem ipsum dolor sit amet.</small></span>
+        <div class="object__card_orange">
+            <div class="container_1290">
+                <div class="object__card_title">Особености квартир</div>
+                <div class="object__card_row d-flex">
+                    <div class="object__card_columnLg">
+                        <div class="object__card_count">27+</div>                    
+                        <div class="object__card_nameLg">Вариантов классических и евро планировок</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">53-141</h1>
-                        <span class="text-secondary ml-1"><small>Lorem ipsum dolor sit amet consectetur adipisicing.</small></span>
+                    <div class="object__card_columnLg">
+                        <div class="object__card_count">53 - 140</div>                    
+                        <div class="object__card_nameLg">Кв. метров общая площадь</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">300</h1>
-                        <span class="text-secondary ml-1"><small>Lorem ipsum dolor sit amet consectetur adipisicing.</small></span>
+                    <div class="object__card_columnLg">
+                        <div class="object__card_count">300</div>                    
+                        <div class="object__card_nameLg">См высота потолков делает квартиры очень просторными</div>
                     </div>
-                    <div class="d-flex mx-3">
-                        <h1 class="m-0 text-nowrap">180</h1>
-                        <span class="text-secondary ml-1"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, atque!</small></span>
-                    </div>
-                </div>
-            </b-container>
-        </div>
-        <b-container class="py-5">
-            <b-row>
-                <b-col cols="3" class="text-center my-4" v-for="i in 8" :key="i">
-                    <div class="w-100"><img src="@/assets/images/png/icon.png" class="rounded-circle border border-dark" style="width: 80px;" alt=""></div>
-                    <div class="text-uppercase mt-2"><small>гармония пейзажа</small></div>
-                </b-col>
-            </b-row>
-        </b-container>
-        <b-container class="bg-dark text-center p-2 my-4">
-            <h1 class="text-white text-uppercase">Галерея</h1>
-            <b-row>
-                <b-col cols="4" class="py-3" v-for="i in 9" :key="i">
-                    <img src="@/assets/images/png/gallery1.png" class="w-100" alt="">
-                </b-col>
-            </b-row>
-        </b-container>
-        <b-container class="my-4 p-3" style="background: #3f417c;">
-            <div class="mb-5">
-                <h2 class="m-0 text-uppercase text-white">контакты</h2>
-                <h3 class="text-uppercase text-white font-weight-normal">уникальный комплекс - для уникальных людей</h3>
-            </div>
-            <div class="d-flex align-items-center pb-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95913.44056607499!2d69.23376702582306!3d41.30244525704403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1609333243458!5m2!1sru!2s" width="745" height="554" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <div class="p-3 mx-auto">
-                    <h2 class="text-center text-uppercase text-white mb-5">Мы на карте</h2>
-                    <div class="d-flex">
-                        <img src="@/assets/images/svg/pin.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
-                        <div class="text-white" style="max-width: 250px;">
-                            Ташкент, Алмазарский район, пересечение улиц МКАД и Шимолий Олмазар
-                        </div>
-                    </div>
-                    <div class="d-flex mt-3">
-                        <img src="@/assets/images/svg/call.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
-                        <div class="text-white" style="max-width: 250px;">
-                            Телефон : <small>+998</small> 71 200 88 22
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <img src="@/assets/images/svg/message.svg" class="mr-2 mt-1" style="width: 15px; height: 15px;" alt="">
-                        <div class="text-white" style="max-width: 250px;">
-                            Email: info@mbc.uz
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <b-button variant="outline-light" pill><div class="text-uppercase p-2">Свяжитесь с нами</div></b-button>
-                    </div>
+                    <div class="object__card_columnLg">
+                        <div class="object__card_count">576</div>                    
+                        <div class="object__card_nameLg">См высота окон установлены турецкие окна</div>
+                    </div>               
                 </div>
             </div>
-        </b-container>
+        </div>        
+        <div class="object__card_90">
+            <div class="container_1290">
+                <div class="main__title">Заголовок</div>
+                <div class="main__text object__card_text">
+                    Оцените видовые характеристики и инсоляцию, сравните цены на поэтажном плане Квартиры в новостройках Ферганы пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи! Квартиры в новостройках Ферганы пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
+                </div>                
+            </div>
+        </div>
+        <div class="advantages advantages__md container_1290">
+            <div class="main__title">Наши приемущества</div>
+            <div class="d-flex flex-wrap advantages__cards">
+            <div class="advantages__card_sm">
+                <div class="advantages__card_count">2274</div> 
+                <div class="advantages__card_name">новостройки</div> 
+            </div>
+            <div class="advantages__card_sm">
+                <div class="advantages__card_count">64350</div> 
+                <div class="advantages__card_name">квартир в продаже</div> 
+            </div>
+            <div class="advantages__card_sm">
+                <div class="advantages__card_count">1348</div> 
+                <div class="advantages__card_name">застройщиков на сайте</div> 
+            </div>  
+            </div>
+            <div class="d-flex flex-wrap advantages__cards">
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/1.svg">
+                </div>
+                <div class="advantages__card_name">Визуальный выбор квартиры</div>
+                <div class="advantages__card_description">Оцените видовые характеристики и инсоляцию, сравните цены на поэтажном плане</div>
+            </div> 
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/2.svg">
+                </div>
+                <div class="advantages__card_name">Льготная ипотека 5.9%</div>
+                <div class="advantages__card_description">Доступно 54 322 предложения в новостройках Москвы и области</div>
+            </div> 
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/3.svg">
+                </div>
+                <div class="advantages__card_name">Новостройки бизнес-класса</div>
+                <div class="advantages__card_description">Подберите квартиру из 11 912 вариантов в 207 жилых комплексах, готовых и строящихся</div>
+            </div> 
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/4.svg">
+                </div>
+                <div class="advantages__card_name">Поиск новостроек на карте</div>
+                <div class="advantages__card_description">Оцените видовые характеристики и инсоляцию, сравните цены на поэтажном плане</div>
+            </div> 
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/5.svg">
+                </div>
+                <div class="advantages__card_name">Возможность бронирования</div>
+                <div class="advantages__card_description">Доступно 54 322 предложения в новостройках Москвы и области</div>
+            </div> 
+            <div class="advantages__card">
+                <div class="advantages__card_image">
+                <img src="@/assets/images/svg/advantages/6.svg">
+                </div>
+                <div class="advantages__card_name">Отслеживание хода строительства</div>
+                <div class="advantages__card_description">Подберите квартиру из 11 912 вариантов в 207 жилых комплексах, готовых и строящихся</div>
+            </div>  
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="container_1290">        
+                <div class="main__title">Галерея</div>            
+                <div class="gallery__row d-flex">
+                
+                    <div class="gallery__column">
+                        <div class="gallery__image gallery__image_md">
+                            <img src="@/assets/images/png/gallery/1.png">
+                            <div class="gallery__image_bg">
+                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                            </div>
+                        </div>                
+                        <div class="gallery__image gallery__image_md">
+                            <img src="@/assets/images/png/gallery/2.png">
+                            <div class="gallery__image_bg">
+                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="gallery__column">
+                        <div class="gallery__image gallery__image_lg">
+                            <img src="@/assets/images/png/gallery/3.png">
+                            <div class="gallery__image_bg">
+                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                            </div>
+                        </div>  
+                    </div>                
+                    <div class="gallery__column">
+                        <div class="gallery__image gallery__image_md">
+                            <img src="@/assets/images/png/gallery/4.png">
+                            <div class="gallery__image_bg">
+                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                            </div>
+                        </div>                
+                        <div class="gallery__image gallery__image_md">
+                            <img src="@/assets/images/png/gallery/5.png">
+                            <div class="gallery__image_bg">
+                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    
+    <div class="constructionProgress">
+        <div class="container_1290">
+            <div class="main__title">Ход строительства</div>
+            <div class="constructionProgress__tabs">                
+                <b-card no-body class="position-relative">
+                    <b-button variant="transparent" class="shadow-none constructionProgress__btn constructionProgress__btn_prev"></b-button>
+                    <b-button variant="transparent" class="shadow-none constructionProgress__btn constructionProgress__btn_next"></b-button>
+
+                    <b-tabs pills>
+                        <b-tab title="2020 05 12" active>                        
+                            <div class="gallery">
+                                <div class="container_1290">            
+                                    <div class="gallery__row d-flex">                                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/1.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/2.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/3.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/4.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>                        
+                        </b-tab>
+                        <b-tab title="2021 05 1" active>                        
+                            <div class="gallery">
+                                <div class="container_1290">            
+                                    <div class="gallery__row d-flex">                                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/5.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/1.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/2.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/3.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>                        
+                        </b-tab>
+                        <b-tab title="2021 05 2" active>                        
+                            <div class="gallery">
+                                <div class="container_1290">            
+                                    <div class="gallery__row d-flex">                                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/4.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/5.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/1.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/2.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>                        
+                        </b-tab>
+                        <b-tab title="2021 05 3" active>                        
+                            <div class="gallery">
+                                <div class="container_1290">            
+                                    <div class="gallery__row d-flex">                                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/3.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/4.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/5.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/1.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>                        
+                        </b-tab>
+                        <b-tab title="2021 05 4" active>                        
+                            <div class="gallery">
+                                <div class="container_1290">            
+                                    <div class="gallery__row d-flex">                                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/2.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>                
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/3.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/4.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__image gallery__image_sm">
+                                            <img src="@/assets/images/png/gallery/5.png">
+                                            <div class="gallery__image_bg">
+                                                <b-button variant="transparent" class="gallery__image_btn shadow-none"></b-button>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>                        
+                        </b-tab>
+                    </b-tabs>
+                </b-card>
+            </div>
+        </div>
+    </div>
+
+
     </div>
 </template>
 

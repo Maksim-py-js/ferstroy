@@ -1046,6 +1046,14 @@
   line-height: 37px;
   color: #000000; }
 
+.main__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000; }
+
 ol.breadcrumb {
   background: transparent;
   padding: 0;
@@ -1498,6 +1506,10 @@ ol.breadcrumb li.breadcrumb-item.active:before {
 .advantages {
   padding-top: 40px;
   margin-bottom: 100px; }
+
+.advantages__md {
+  padding-top: 40px;
+  margin-bottom: 80px; }
 
 .advantages__card {
   background: linear-gradient(180deg, rgba(241, 243, 249, 0) 0%, rgba(241, 243, 249, 0.44) 100%);
@@ -2092,3 +2104,210 @@ ol.breadcrumb li.breadcrumb-item.active:before {
 .searchResult input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+.object__card_orange {
+  background: #FF9800;
+  padding: 72px 0 50px 0; }
+
+.object__card_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF; }
+
+.object__card_row {
+  margin: 30px 0; }
+
+.object__card_column {
+  width: 100%;
+  max-width: 258px;
+  min-width: 230px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.32);
+  display: flex;
+  align-items: center; }
+
+.object__card_columnLg {
+  width: 100%;
+  max-width: 330px;
+  min-width: 300px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.32);
+  display: flex;
+  align-items: center; }
+
+.object__card_count {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 68px;
+  color: #FFFFFF;
+  white-space: nowrap; }
+
+.object__card_name {
+  max-width: 120px;
+  width: 100%;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF; }
+
+.object__card_nameLg {
+  max-width: 175px;
+  width: 100%;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF; }
+
+.object__card_90 {
+  padding: 90px 0 50px 0; }
+
+.object__card_text {
+  margin-top: 22px; }
+
+.gallery__row {
+  margin: 22px 0 80px 0; }
+
+.gallery__column {
+  margin-right: 30px; }
+
+.gallery__column:nth-child(3n) {
+  margin-right: 0; }
+
+.gallery__image {
+  position: relative;
+  width: 410px;
+  background: #F0F1F2;
+  border-radius: 3px; }
+
+.gallery__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 3px; }
+
+.gallery__image_sm {
+  width: 300px;
+  height: 280px;
+  margin-right: 30px; }
+
+.gallery__image_sm:nth-child(4n) {
+  margin-right: 0; }
+
+.gallery__image_md {
+  height: 280px;
+  margin-bottom: 30px; }
+
+.gallery__image_md:nth-child(2n) {
+  margin-bottom: 0; }
+
+.gallery__image_lg {
+  height: 590px; }
+
+.gallery__image:hover .gallery__image_bg {
+  display: block; }
+
+.gallery__image_bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px; }
+
+.gallery__image_btn {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  transform: translateX(calc(-50% + 32px), calc(-50% + 32px));
+  padding: 0;
+  margin: 0;
+  width: 64px;
+  height: 64px;
+  background: transparent url("../assets/images/svg/gallery_btn.svg") no-repeat 50% 50%; }
+
+.constructionProgress {
+  margin-bottom: 70px; }
+
+.constructionProgress__tabs {
+  margin-top: 22px; }
+
+.constructionProgress__tabs .card {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.constructionProgress__tabs .card:hover {
+  transform: scale(1);
+  box-shadow: none;
+  background: #fff; }
+
+.constructionProgress__tabs .card .tabs ul {
+  background: linear-gradient(180deg, rgba(241, 243, 249, 0) 0%, rgba(241, 243, 249, 0.44) 100%);
+  border: 1px solid #D8DAE1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 20px 110px;
+  margin-bottom: 40px; }
+
+.constructionProgress__tabs .card .tabs ul li {
+  margin-right: 32px; }
+
+.constructionProgress__tabs .card .tabs ul li:nth-child(5n) {
+  margin-right: 0; }
+
+.constructionProgress__tabs .card .tabs ul li a {
+  background: #fff;
+  border-radius: 3px;
+  padding: 13px 43px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000; }
+
+.constructionProgress__tabs .card .tabs ul li a.active {
+  background: #77C85B;
+  color: #FFFFFF;
+  position: relative; }
+
+.constructionProgress__tabs .card .tabs ul li a.active:before {
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  border: 19px solid transparent;
+  border-top: 10.5px solid #77C85B; }
+
+.constructionProgress__btn {
+  width: 15px;
+  height: 23px;
+  padding: 0;
+  position: absolute;
+  top: 34px; }
+
+.constructionProgress__btn_prev {
+  left: 30px;
+  background: transparent url("../assets/images/svg/constructionProgress-btn.svg") no-repeat 50% 50%/cover; }
+
+.constructionProgress__btn_next {
+  right: 30px;
+  transform: rotate(180deg);
+  background: transparent url("../assets/images/svg/constructionProgress-btn.svg") no-repeat 50% 50%/cover; }
