@@ -17,7 +17,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/styles/main.css'
+    '@/styles/main.css',
+    '@/styles/map.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -25,7 +26,8 @@ export default {
     '@plugins/bootstrap-vue',
     '@plugins/chart',
     { src: '~/plugins/vue-notifications', ssr:  false },
-    { src: "@/plugins/v-click-outside", ssr: false }
+    { src: "@/plugins/v-click-outside", ssr: false },
+    { src: '~/plugins/ymapPlugin.js',  ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
