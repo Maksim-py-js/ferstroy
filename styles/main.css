@@ -260,7 +260,8 @@
 
 .header__language {
   width: 61px;
-  height: 26px; }
+  height: 26px;
+  z-index: 20; }
 
 .header__language_block {
   top: 0;
