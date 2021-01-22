@@ -1,5 +1,6 @@
 <template>
     <div>
+        <ObjectHeader /> 
         <div class="object__card_orange">
             <div class="container_1290">
                 <div class="object__card_title">Особености жилого комплекса</div>
@@ -476,10 +477,14 @@
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
 <script>
+import ObjectHeader from '@/components/main/object_header'
+import Footer from '@/components/main/footer'
+
   export default {    
     layout: 'object'
   }
