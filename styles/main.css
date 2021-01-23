@@ -2600,3 +2600,278 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   line-height: 22px;
   color: #000000;
   width: 454px; }
+
+.house__breadcrumbs {
+  position: absolute;
+  top: 2.29167vw;
+  left: 1.04167vw; }
+
+.house__breadcrumbs .back {
+  width: 2.44792vw;
+  height: 2.44792vw;
+  margin-right: 1.04167vw;
+  border: 0.10417vw solid #FFFFFF;
+  border-radius: 50%; }
+
+.house__breadcrumbs .back:hover {
+  border-color: #FF9800; }
+
+.house__breadcrumbs .back:focus svg {
+  fill: #FF9800; }
+
+.house__breadcrumbs .back svg {
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%);
+  height: 0.72917vw;
+  width: 1.25vw;
+  fill: #fff; }
+
+.house__breadcrumbs .home {
+  width: 9.73958vw;
+  height: 2.44792vw;
+  padding-left: 0.78125vw;
+  padding-top: 0.625vw;
+  border: 0.10417vw solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 1.71875vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.78125vw;
+  line-height: 0.9375vw;
+  color: #FFFFFF; }
+
+.house__breadcrumbs .home:hover {
+  border-color: #FF9800; }
+
+.house__breadcrumbs .home:focus {
+  color: #FF9800; }
+
+.house__breadcrumbs .home:focus svg {
+  fill: #FF9800; }
+
+.house__breadcrumbs .home svg {
+  height: 1.14583vw;
+  width: 1.25vw;
+  margin-right: 0.67708vw;
+  fill: #fff; }
+
+.house svg {
+  width: calc(calculateVw(1920));
+  height: calc(calculateVw(1080)); }
+
+.house svg rect {
+  width: 100%;
+  height: 100%; }
+
+.house svg path.houseFloor {
+  z-index: 2000;
+  fill: transparent;
+  transition: .7s; }
+
+.house svg path.houseFloor:hover {
+  fill: #ffffff;
+  cursor: pointer; }
+
+.house__description {
+  position: absolute;
+  top: 16.45833vw;
+  left: 23.80208vw;
+  width: 5.15625vw;
+  height: 9.11458vw;
+  padding: 0.46875vw 0.46875vw 1.14583vw;
+  background: #FFFFFF;
+  border-radius: 0.52083vw;
+  opacity: 0;
+  transition: .7s; }
+
+.house__descriptionTwo {
+  top: 38.33333vw;
+  left: 23.80208vw; }
+
+.house__description.active {
+  opacity: 1; }
+
+.house__description:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -0.57292vw;
+  border-bottom: 0.74427vw solid transparent;
+  border-top: 0.74427vw solid transparent;
+  border-left: 0.58594vw solid #fff; }
+
+.house__description_block {
+  padding-bottom: 0.88542vw;
+  border-bottom: 0.05208vw solid #C4C4C4; }
+
+.house__description_block:last-child {
+  padding-bottom: 0;
+  border-bottom: 0; }
+
+.house__description_count {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 1.51042vw;
+  text-align: center;
+  color: #FF9800;
+  margin-top: 0.67708vw; }
+
+.house__description_name {
+  font-family: "Montserrat";
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14583vw;
+  letter-spacing: 0em;
+  text-align: center; }
+
+.house__leftBlock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18.22917vw;
+  height: 56.61458vw;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2.91667vw 0 0 1.5625vw; }
+
+.house__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 1.14583vw;
+  color: #FF9800;
+  margin-bottom: 1.04167vw; }
+
+.house__buttons {
+  margin-bottom: 2.08333vw;
+  position: relative;
+  margin-top: 2.08333vw; }
+
+.house__buttons:before {
+  content: '';
+  width: 7.33333vw;
+  height: 0.77083vw;
+  background: transparent url("../assets/images/svg/house-blocks/roof.svg") no-repeat 50% 50%/cover;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: -1.16146vw;
+  left: 1.35417vw; }
+
+.house__button {
+  position: relative;
+  width: 7.33333vw;
+  height: 1.7599vw;
+  margin-bottom: 0.47969vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.72917vw;
+  line-height: 0.88542vw;
+  color: #FFFFFF;
+  background: transparent url("../assets/images/svg/house-blocks/floor.svg") no-repeat 50% 50%/cover;
+  border-radius: 0;
+  margin-left: 1.35417vw;
+  transition: .4s; }
+
+.house__button:before {
+  content: '';
+  width: 100%;
+  height: 0.23438vw;
+  background: #525252;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: -0.39063vw;
+  left: 0; }
+
+.house__button.active, .house__button:hover {
+  color: #fff;
+  background: transparent url("../assets/images/svg/house-blocks/floor-active.svg") no-repeat 50% 50%/cover; }
+
+.house__button span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1.35417vw; }
+
+.house__blocks {
+  border: 0.05208vw solid rgba(255, 255, 255, 0.16);
+  width: 15.625vw;
+  padding: 1.45833vw 1.45833vw 0 1.45833vw; }
+
+.house__block {
+  display: flex;
+  justify-content: space-between; }
+
+.house__block_btn {
+  position: relative;
+  width: 1.5625vw;
+  height: 3.64583vw;
+  border: 0.05208vw solid #747474;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-bottom: 1.45833vw;
+  padding: 0; }
+
+.house__block_btn:hover {
+  background: #FFFFFF; }
+
+.house__block_btn:hover span {
+  color: #000000; }
+
+.house__block_btn.active {
+  background: #FFFFFF; }
+
+.house__block_btn.active span {
+  color: #000000; }
+
+.house__block_btn span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.72917vw;
+  line-height: 0.88542vw;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%); }
+
+.house__block_btn_horizontal {
+  width: 2.86458vw;
+  height: 1.5625vw;
+  border: 0.05208vw solid #747474;
+  box-sizing: border-box;
+  border-radius: 0;
+  align-self: flex-end;
+  margin-bottom: 1.45833vw;
+  position: relative;
+  padding: 0; }
+
+.house__block_btn_horizontal:hover {
+  background: #FFFFFF; }
+
+.house__block_btn_horizontal:hover span {
+  color: #000000; }
+
+.house__block_btn_horizontal span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.72917vw;
+  line-height: 0.88542vw;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%); }

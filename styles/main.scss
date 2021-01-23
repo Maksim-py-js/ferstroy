@@ -1,3 +1,8 @@
+@function calculateVw($size) {
+  $vwSize: $size * 100 / 1920;
+  @return #{$vwSize}vw;
+}
+
 .header {
     height: 100vh;
     min-height: 940px;
@@ -2774,5 +2779,297 @@ ol.breadcrumb {
         line-height: 22px;
         color: #000000;
         width: 454px;
+    }
+}
+
+.house {
+    &__breadcrumbs {
+        position: absolute;
+        top: calculateVw(44);
+        left: calculateVw(20);
+        .back {
+            width: calculateVw(47);
+            height: calculateVw(47);
+            margin-right: calculateVw(20);
+            border: calculateVw(2) solid #FFFFFF;
+            border-radius: 50%;
+            &:hover {
+                border-color: #FF9800;
+            }
+            &:focus {
+                svg {
+                    fill: #FF9800;
+                }
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50;
+                transform: translate(-50%, -50%);
+                height: calculateVw(14);
+                width: calculateVw(24);
+                fill: #fff;
+            }
+        }
+        .home {
+            width: calculateVw(187);
+            height: calculateVw(47);
+            padding-left: calculateVw(15);
+            padding-top: calculateVw(12);
+            border: calculateVw(2) solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: calculateVw(33);
+            
+
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: calculateVw(15);
+            line-height: calculateVw(18);
+            color: #FFFFFF;
+            &:hover {
+                border-color: #FF9800;
+            }
+            &:focus {
+                color: #FF9800;
+                svg {
+                    fill: #FF9800;
+                }
+            }
+            svg {
+                height: calculateVw(22);
+                width: calculateVw(24);
+                margin-right: calculateVw(13);
+                fill: #fff;
+            }
+        }
+    }
+    svg {
+        width: calc(calculateVw(1920));
+        height: calc(calculateVw(1080));
+        rect {
+            width: 100%;
+            height: 100%;
+        }
+        path.houseFloor {
+            z-index: 2000;
+            fill: transparent;
+            transition: .7s;
+            &:hover {
+                fill: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+    &__description {
+        position: absolute;
+        top: calculateVw(316);
+        left: calculateVw(457);
+        width: calculateVw(99);
+        height: calculateVw(175);
+        padding: calculateVw(9) calculateVw(9) calculateVw(22);
+        background: #FFFFFF;
+        border-radius: calculateVw(10);
+        opacity: 0;
+        transition: .7s;
+        &Two {
+            top: calculateVw(736);
+            left: calculateVw(457);
+        }
+        &.active {
+            opacity: 1;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calculateVw(-11);
+            border-bottom: calculateVw(14.29) solid transparent;
+            border-top: calculateVw(14.29) solid transparent;
+            border-left: calculateVw(11.25) solid #fff;
+        }
+        &_block {
+            padding-bottom: calculateVw(17);
+            border-bottom: calculateVw(1) solid #C4C4C4;
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+        &_count {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: bold;
+            font-size: calculateVw(24);
+            line-height: calculateVw(29);
+            text-align: center;
+            color: #FF9800;
+            margin-top: calculateVw(13);
+        }
+        &_name {
+            font-family: "Montserrat";
+            font-size: calculateVw(18);
+            font-style: normal;
+            font-weight: 500;
+            line-height: calculateVw(22);
+            letter-spacing: 0em;
+            text-align: center;
+        }
+    }
+    &__leftBlock {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calculateVw(350);
+        height: calculateVw(1087);
+
+        background: rgba(0, 0, 0, 0.8);
+        padding: calculateVw(56) 0 0 calculateVw(30);
+    }
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: calculateVw(18);
+        line-height: calculateVw(22);
+        color: #FF9800;
+        margin-bottom: calculateVw(20);
+    }
+    &__buttons {
+        margin-bottom: calculateVw(40);
+        position: relative;
+        margin-top: calculateVw(40);
+        &:before {            
+            content: '';
+            width: calculateVw(140.8);
+            height: calculateVw(14.8);
+            background: transparent url('../assets/images/svg/house-blocks/roof.svg') no-repeat 50% 50%/cover;
+            border: 0;
+            padding: 0;
+            position: absolute;
+            top: calculateVw(-22.3);
+            left: calculateVw(26);
+        }
+    }
+    &__button {
+        position: relative;
+        width: calculateVw(140.8);
+        height: calculateVw(33.79);
+        margin-bottom: calculateVw(9.21);
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: calculateVw(14);
+        line-height: calculateVw(17);
+        color: #FFFFFF;
+        background: transparent url('../assets/images/svg/house-blocks/floor.svg') no-repeat 50% 50%/cover;
+        border-radius: 0;
+        margin-left: calculateVw(26);
+        transition: .4s;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: calculateVw(4.5);
+            background: #525252;
+            border: 0;
+            padding: 0;
+            position: absolute;
+            top: calculateVw(-7.5);
+            left: 0;
+        }
+        &.active,
+        &:hover {
+            color: #fff;
+            background: transparent url('../assets/images/svg/house-blocks/floor-active.svg') no-repeat 50% 50%/cover;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calculateVw(-26);
+        }
+    }
+    &__blocks {
+        border: calculateVw(1) solid rgba(255, 255, 255, 0.16);
+        width: calculateVw(300);
+        padding: calculateVw(28) calculateVw(28) 0 calculateVw(28);
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        &_btn {
+            position: relative;
+
+            width: calculateVw(30);
+            height: calculateVw(70);
+
+            border: calculateVw(1) solid #747474;
+            box-sizing: border-box;
+            border-radius: 0;
+            margin-bottom: calculateVw(28);
+            padding: 0;
+            &:hover {
+                background: #FFFFFF;
+                span {
+                    color: #000000;
+                }
+            }
+            &.active {
+                background: #FFFFFF;
+                span {
+                    color: #000000;
+                }
+            }
+            span {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: calculateVw(14);
+                line-height: calculateVw(17);
+                text-align: center;
+                color: #FFFFFF;
+
+                position: absolute;
+                top: 50%;
+                left: 50;
+                transform: translate(-50%, -50%);
+            }
+
+            &_horizontal {
+                width: calculateVw(55);
+                height: calculateVw(30);
+
+                border: calculateVw(1) solid #747474;
+                box-sizing: border-box;
+                border-radius: 0;
+                align-self: flex-end;
+                margin-bottom: calculateVw(28);
+                position: relative;
+                padding: 0;
+                &:hover {
+                    background: #FFFFFF;
+                    span {
+                        color: #000000;
+                    }
+                }
+                span {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: calculateVw(14);
+                    line-height: calculateVw(17);
+                    text-align: center;
+                    color: #FFFFFF;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }        
     }
 }

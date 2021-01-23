@@ -118,7 +118,7 @@
                             <div class="leftRowCard__title_text">Вы просматривали</div>
                             <div class="leftRowCard__title_image"><img src="@/assets/images/svg/eye-icon.svg"></div>
                         </div>
-                        <nuxt-link to="/object_page" class="text-decoration-none" v-for="i in 3">
+                        <nuxt-link to="/developers/developer/object" class="text-decoration-none" v-for="i in 3" :key="i">
                             <div class="leftRowCard d-flex">
                                 <div class="leftRowCard__image">
                                     <img src="@/assets/images/png/cards/image 52.png">
@@ -144,7 +144,7 @@
                             <div class="leftRowCard__title_text">Вы просматривали</div>
                             <div class="leftRowCard__title_image"><img src="@/assets/images/svg/eye-icon.svg"></div>
                         </div>
-                        <nuxt-link to="/object_page" class="text-decoration-none" v-for="i in 3">
+                        <nuxt-link to="/developers/developer/object" class="text-decoration-none" v-for="i in 3" :key="i">
                             <div class="leftRowCard d-flex">
                                 <div class="leftRowCard__image">
                                     <img src="@/assets/images/png/cards/image 52.png">
