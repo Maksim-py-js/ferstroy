@@ -135,5 +135,65 @@
     &__about {
         margin: 50px 0 53px;
     }
+    &__wood {
+        margin: 50px 0 67px;
+    }
+    &__woodTitle {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.57px;
+        margin-bottom: 50px;
+    }
+    &__woodDate {
+        font-size: 66px;
+        font-weight: 500;
+        font-family: 'Oswald';
+        margin: 0 30px;
+    }
+    &__woodObjects {
+        overflow: auto;
+        white-space: nowrap;
+        width: 520px;
+        padding: 0 0 10px;
+        font-size: 0;
+    }
+    &__objectItem {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        font-size: 0;
+        border: 2px solid transparent;
+        img {
+            font-size: 0;
+            width: 100%;
+        }
+        &:hover {
+            border: 2px solid #FF9800;
+        }
+    }
+    &__woodBuildName {
+        display: none;
+        background: #fff;
+        padding: 18xp 31px;
+        border: 1px solid #f6f6f6;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000;
+        position: absolute;
+        top: 0px;
+        // transform: translate(0, 0px);
+        z-index: 100;
+    }
+    .line {
+        width: 13px;
+        height: 2px;
+        background: #000;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    &__woodEmpty {
+        width: 520px;
+    }
 }
 // developer card end

@@ -13,22 +13,26 @@
 .devCards {
   row-gap: 30px;
   column-gap: 30px; }
-  .devCards__card {
-    text-decoration: none;
-    display: inline-block;
-    width: 15.625vw;
-    padding: 20px 20px 30px;
-    box-sizing: border-box;
-    border: 2px solid #cecece3a;
-    background: url(../assets/images/png/devCardBg.png) no-repeat 50% 50%/cover; }
-    .devCards__card:hover {
-      border: 2px solid #FF9800; }
-  .devCards__logo {
-    margin: 14px 0 20px; }
-  .devCards__line {
-    opacity: 0.1;
-    height: 1px;
-    margin: 20px 0; }
+
+.devCards__card {
+  text-decoration: none;
+  display: inline-block;
+  width: 15.625vw;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+  border: 2px solid #cecece3a;
+  background: url(../assets/images/png/devCardBg.png) no-repeat 50% 50%/cover; }
+
+.devCards__card:hover {
+  border: 2px solid #FF9800; }
+
+.devCards__logo {
+  margin: 14px 0 20px; }
+
+.devCards__line {
+  opacity: 0.1;
+  height: 1px;
+  margin: 20px 0; }
 
 .dev__data {
   margin-top: 40px; }
@@ -70,8 +74,9 @@
   margin-right: 21px;
   width: 27px;
   font-size: 0; }
-  .dev__reviewsIcon img {
-    width: 100%; }
+
+.dev__reviewsIcon img {
+  width: 100%; }
 
 .dev__reviewsText {
   color: #FF9800;
@@ -113,3 +118,62 @@
 
 .dev__about {
   margin: 50px 0 53px; }
+
+.dev__wood {
+  margin: 50px 0 67px; }
+
+.dev__woodTitle {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36.57px;
+  margin-bottom: 50px; }
+
+.dev__woodDate {
+  font-size: 66px;
+  font-weight: 500;
+  font-family: 'Oswald';
+  margin: 0 30px; }
+
+.dev__woodObjects {
+  overflow: auto;
+  white-space: nowrap;
+  width: 520px;
+  padding: 0 0 10px;
+  font-size: 0; }
+
+.dev__objectItem {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  font-size: 0;
+  border: 2px solid transparent; }
+
+.dev__objectItem img {
+  font-size: 0;
+  width: 100%; }
+
+.dev__objectItem:hover {
+  border: 2px solid #FF9800; }
+
+.dev__woodBuildName {
+  display: none;
+  background: #fff;
+  padding: 18xp 31px;
+  border: 1px solid #f6f6f6;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  position: absolute;
+  top: 0px;
+  z-index: 100; }
+
+.dev .line {
+  width: 13px;
+  height: 2px;
+  background: #000;
+  display: inline-block;
+  margin: 0 10px; }
+
+.dev__woodEmpty {
+  width: 520px; }

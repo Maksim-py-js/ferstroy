@@ -16,7 +16,7 @@
                         </nuxt-link>
                         <b-navbar-nav class="text-center align-items-center h-100">
                             <nuxt-link to="/" class="header__navItem text-decoration-none">О компании</nuxt-link>
-                            <nuxt-link to="/developers/developer/object" class="header__navItem text-decoration-none">Объекты</nuxt-link>
+                            <nuxt-link to="/developers" class="header__navItem text-decoration-none">Застройщики</nuxt-link>
                             <nuxt-link to="/" class="header__navItem text-decoration-none">Уникальность проектов</nuxt-link>
                             <nuxt-link to="/" class="header__navItem text-decoration-none">Карьера</nuxt-link>
                             <nuxt-link to="/" class="header__navItem text-decoration-none">Тендеры</nuxt-link>

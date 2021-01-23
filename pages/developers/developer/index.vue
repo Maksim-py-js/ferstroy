@@ -67,6 +67,127 @@
                     </div>
                 </div>
 
+                <div class="dev__wood text-center">
+                    <h6 class="dev__woodTitle main__title">Объекты застройщика</h6>
+                    <div class="dev__woodBody text-center">
+                        <b-row class="dev__woodYear align-items-center justify-content-center">
+                            <div class="dev__woodEmpty item"></div>
+                            <div class="dev__woodDate item">2020 г.</div>
+                            <div class="dev__woodObjects item text-left">
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                            </div>
+                        </b-row>
+                        <div class="dev__arrayYear">
+                            <img src="@/assets/images/svg/arrayYear.svg"/>
+                        </div>
+                        <b-row class="dev__woodYear align-items-center justify-content-center">
+                            <div class="dev__woodObjects item text-right">
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                            </div>
+                            <div class="dev__woodDate item">2019 г.</div>
+                            <div class="dev__woodEmpty item"></div>
+                        </b-row>
+                        <div class="dev__arrayYear">
+                            <img src="@/assets/images/svg/arrayYear.svg"/>
+                        </div>
+                        <b-row class="dev__woodYear align-items-center justify-content-center">
+                            <div class="dev__woodEmpty item"></div>
+                            <div class="dev__woodDate item">2018 г.</div>
+                            <div class="dev__woodObjects item text-left">
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                    <div class="dev__woodBuildName rounded maint__text">ЖК Фергана</div>
+                                </nuxt-link>
+                            </div>
+                        </b-row>
+                        <div class="dev__arrayYear">
+                            <img src="@/assets/images/svg/arrayYear.svg"/>
+                        </div>
+                        <b-row class="dev__woodYear align-items-center justify-content-center">
+                            <div class="dev__woodObjects item text-right">
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                                <div class="line"></div>
+                                <nuxt-link to="/developers/developer/object" class="dev__objectItem text-decoration-none">
+                                    <img src="@/assets/images/png/minBuild.png">
+                                </nuxt-link>
+                            </div>
+                            <div class="dev__woodDate item">2017 г.</div>
+                            <div class="dev__woodEmpty item"></div>
+                        </b-row>
+                    </div>
+                </div>
+
                 <div class="reviews">
                     <div class="container_1290">
                         <div class="main__title text-center">Отзывы наших клиентов</div>
@@ -193,5 +314,17 @@ import Header from '@/components/main/header'
 import Footer from '@/components/main/footer'
 
 export default {
+    data() {
+        return {
+            data: {
+                2018: ['жк Фергана', 'жк Фергана', 'жк Фергана'],
+                2019: ['жк Фергана', 'жк Фергана', 'жк Фергана', 'жк Фергана'],
+                2020: ['жк Фергана', 'жк Фергана'],
+                2021: ['жк Фергана', 'жк Фергана'],
+                2022: ['жк Фергана', 'жк Фергана'],
+                2023: ['жк Фергана', 'жк Фергана'],
+            }
+        }
+    }
 }
 </script>
