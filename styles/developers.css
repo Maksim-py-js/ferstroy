@@ -1,0 +1,115 @@
+.content__name {
+  margin: 30px 0 37px; }
+
+.content__text {
+  margin: 40px 0 80px; }
+
+.content .card__rating_text {
+  color: #000; }
+
+.content .card__buildName {
+  color: #000; }
+
+.devCards {
+  row-gap: 30px;
+  column-gap: 30px; }
+  .devCards__card {
+    text-decoration: none;
+    display: inline-block;
+    width: 15.625vw;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    border: 2px solid #cecece3a;
+    background: url(../assets/images/png/devCardBg.png) no-repeat 50% 50%/cover; }
+    .devCards__card:hover {
+      border: 2px solid #FF9800; }
+  .devCards__logo {
+    margin: 14px 0 20px; }
+  .devCards__line {
+    opacity: 0.1;
+    height: 1px;
+    margin: 20px 0; }
+
+.dev__data {
+  margin-top: 40px; }
+
+.dev__left {
+  margin-right: 40px; }
+
+.dev__bigLogo {
+  background: #F3F5FA;
+  font-size: 0;
+  width: 440px;
+  height: 440px; }
+
+.dev__name {
+  font-size: 50px;
+  font-weight: 600; }
+
+.dev__dataRating {
+  margin: 31px 0; }
+
+.dev__rating {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px; }
+
+.dev__vote {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #9C9C9C;
+  margin-right: 30px; }
+
+.dev__stars {
+  font-size: 0;
+  margin-top: 3px; }
+
+.dev__reviewsIcon {
+  margin-right: 21px;
+  width: 27px;
+  font-size: 0; }
+  .dev__reviewsIcon img {
+    width: 100%; }
+
+.dev__reviewsText {
+  color: #FF9800;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  font-size: 18px;
+  font-weight: 500; }
+
+.dev__reviewsNum {
+  font-size: 18px;
+  font-weight: 500; }
+
+.dev__dataName {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 22.5px 0 19px; }
+
+.dev__dataText {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0; }
+
+.dev .greyText {
+  color: #9C9C9C; }
+
+.dev__phoneBtn {
+  padding: 29px 0;
+  width: 300px;
+  border: 2px solid #FF9800;
+  margin-top: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000; }
+
+.dev a {
+  font-size: 0;
+  text-decoration: none; }
+
+.dev__about {
+  margin: 50px 0 53px; }

@@ -75,12 +75,12 @@
                 <div class="filter">
                     <div class="filterName mt-2 mb-1">Застройщики</div>
                     <v-selectize 
-                                placeholder="Выберите застройщика"
-                                v-model="selected_finishing" 
-                                :options="finishing"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="margin: 0;"
-                            />
+                        placeholder="Выберите застройщика"
+                        v-model="selected_finishing" 
+                        :options="finishing"
+                        class="searchResult__leftRow_selectize select-260"
+                        style="margin: 0;"
+                    />
                 </div>
                 <div class="filter houseFilter">
                     <b-form-group v-slot="{ ariaDescribedby }">
@@ -97,11 +97,11 @@
             </div>
         </div>
         <div class="container_1290">
-            <h3 class="page__title">Карта Новостроек или как найти идеальное жильё в Фергане</h3>
+            <h3 class="main__title">Карта Новостроек или как найти идеальное жильё в Фергане</h3>
             <b-row>
                 <b-col>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
-                    <span class="discription__text">
+                    <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                     </span>
                     <div class="map">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
-                    <span class="discription__text">
+                    <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                         <br/>
                         <br/>
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
-                    <span class="discription__text">
+                    <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                         <br/>
                         <br/>
@@ -186,7 +186,7 @@
                 </b-col>
                 <b-col>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
-                    <span class="discription__text">
+                    <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                         <br/>
                         <br/>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
-                    <span class="discription__text">
+                    <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                         <br/>
                         <br/>
