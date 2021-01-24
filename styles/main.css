@@ -1154,12 +1154,12 @@ ol.breadcrumb li span {
   line-height: 20px;
   color: #B0B0B0; }
 
-ol.breadcrumb li.breadcrumb-item.active {
+ol.breadcrumb li.breadcrumb-item {
   padding-left: 24px;
   margin-left: 24px;
   position: relative; }
 
-ol.breadcrumb li.breadcrumb-item.active:before {
+ol.breadcrumb li.breadcrumb-item:before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -1168,6 +1168,20 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   height: 11px;
   content: '';
   background: url("../assets/images/svg/breadcrumb-arrow-right.svg") no-repeat 50% 50%; }
+
+ol.breadcrumb li.breadcrumb-item:first-child {
+  padding-left: 0;
+  margin-left: 0; }
+
+ol.breadcrumb li.breadcrumb-item:first-child:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+  width: 0px;
+  height: 0px;
+  content: '';
+  background: none; }
 
 .card {
   width: 300px;

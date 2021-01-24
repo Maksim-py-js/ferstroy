@@ -2,6 +2,7 @@
     <div>
         <Header />  
             <div class="content container_1290">
+                <b-breadcrumb :items="breadcrumbItems" variant="transparent" class="mt-5"></b-breadcrumb>
                 <div class="content__name d-flex justify-content-between align-items-center searchResult__header">                
                     <div class="main__title">Застройщики Ферганы</div>            
                     <div>
@@ -230,6 +231,16 @@ export default {
     },
     data() {
         return {
+            breadcrumbItems: [
+                {
+                    text: 'Главная',
+                    href: '/'
+                },
+                {
+                    text: 'Застройщики Ферганы',
+                    active: true
+                }
+            ],
             sortingByPrice: [
                 'По убыванию',
                 'По возрастанию'

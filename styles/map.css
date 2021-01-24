@@ -1,6 +1,9 @@
 .map-body {
   padding-bottom: 60px; }
 
+.map-body .ymaps-2-1-78-balloon__content ymaps {
+  height: auto !important; }
+
 .discription__title {
   line-height: 30px;
   font-family: Montserrat;
@@ -202,7 +205,11 @@ div .btn-secondary:hover {
   width: 100px; }
 
 .buildCard {
+  display: block;
   padding: 20px; }
+
+.buildCard:hover {
+  text-decoration: none; }
 
 .buildCard .buildName {
   font-size: 18px;

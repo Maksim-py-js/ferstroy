@@ -1250,7 +1250,7 @@ ol.breadcrumb {
             line-height: 20px;
             color: #B0B0B0;
         }
-        &.breadcrumb-item.active {
+        &.breadcrumb-item {
             padding-left: 24px;
             margin-left: 24px;
             position: relative;
@@ -1263,6 +1263,20 @@ ol.breadcrumb {
                 height: 11px;
                 content: '';
                 background: url('../assets/images/svg/breadcrumb-arrow-right.svg') no-repeat 50% 50%;
+            }
+            &:first-child {
+                padding-left: 0;
+                margin-left: 0;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translateY(0);
+                    width: 0px;
+                    height: 0px;
+                    content: '';
+                    background: none;
+                }
             }
         }
     }
