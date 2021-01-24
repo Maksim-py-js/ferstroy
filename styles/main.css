@@ -975,16 +975,16 @@
   margin: 0 auto; }
 
 ::-webkit-scrollbar {
-  width: 3px;
-  height: 3px; }
+  width: 0.15625vw;
+  height: 0.15625vw; }
 
 ::-webkit-scrollbar-track {
-  border-radius: 3px;
+  border-radius: 0.15625vw;
   background: #000; }
 
 ::-webkit-scrollbar-thumb {
   background: #FF9800;
-  border-radius: 3px; }
+  border-radius: 0.15625vw; }
 
 .preloader {
   position: fixed;
@@ -2568,6 +2568,8 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   fill: white; }
 
 .svg__object_block {
+  opacity: 0;
+  transition: .7s;
   position: absolute;
   top: 438px;
   left: 943px;
@@ -2582,6 +2584,9 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   left: -30px;
   border-bottom: 56px solid transparent;
   border-right: 43px solid white; }
+
+.svg__object_block.active {
+  opacity: 1; }
 
 .svg__object_title {
   font-family: "Montserrat";
@@ -2604,7 +2609,9 @@ ol.breadcrumb li.breadcrumb-item.active:before {
 .house__breadcrumbs {
   position: absolute;
   top: 2.29167vw;
-  left: 1.04167vw; }
+  left: 1.04167vw;
+  display: flex;
+  height: 2.44792vw; }
 
 .house__breadcrumbs .back {
   width: 2.44792vw;
@@ -2658,20 +2665,24 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   margin-right: 0.67708vw;
   fill: #fff; }
 
-.house svg {
+.house__bg svg {
   width: calc(calculateVw(1920));
   height: calc(calculateVw(1080)); }
 
-.house svg rect {
+.house__bg svg rect {
   width: 100%;
   height: 100%; }
 
-.house svg path.houseFloor {
+.house__bg svg path.houseFloor {
   z-index: 2000;
   fill: transparent;
   transition: .7s; }
 
-.house svg path.houseFloor:hover {
+.house__bg svg path.houseFloor.active {
+  fill: white;
+  cursor: pointer; }
+
+.house__bg svg path.houseFloor:hover {
   fill: #ffffff;
   cursor: pointer; }
 
@@ -2731,7 +2742,7 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   letter-spacing: 0em;
   text-align: center; }
 
-.house__leftBlock {
+.house__rightBlock {
   position: absolute;
   top: 0;
   right: 0;
@@ -2739,6 +2750,204 @@ ol.breadcrumb li.breadcrumb-item.active:before {
   height: 56.61458vw;
   background: rgba(0, 0, 0, 0.8);
   padding: 2.91667vw 0 0 1.5625vw; }
+
+.house__leftBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: inline-block;
+  overflow: hidden;
+  transition: .7s;
+  width: 0;
+  height: 56.61458vw;
+  background: #fff;
+  padding: 2.34375vw 0 0 1.04167vw;
+  z-index: 3; }
+
+.house__leftBlock_breadcrumbs {
+  margin-bottom: 0.625vw; }
+
+.house__leftBlock_breadcrumbs .back {
+  width: 2.44792vw;
+  height: 2.44792vw;
+  margin-right: 1.04167vw;
+  border: 0.10417vw solid #E8E8E8;
+  border-radius: 50%;
+  position: relative; }
+
+.house__leftBlock_breadcrumbs .back:hover {
+  border-color: #FF9800; }
+
+.house__leftBlock_breadcrumbs .back:focus {
+  border-color: #FF9800; }
+
+.house__leftBlock_breadcrumbs .back:focus svg {
+  fill: #FF9800; }
+
+.house__leftBlock_breadcrumbs .back svg {
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%);
+  height: 0.72917vw;
+  width: 1.25vw;
+  fill: #000; }
+
+.house__leftBlock_breadcrumbs .home {
+  width: 9.73958vw;
+  height: 2.44792vw;
+  padding-left: 0.78125vw;
+  padding-top: 0.625vw;
+  border: 0.10417vw solid #E8E8E8;
+  box-sizing: border-box;
+  border-radius: 1.71875vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.78125vw;
+  line-height: 0.9375vw;
+  color: #000; }
+
+.house__leftBlock_breadcrumbs .home:hover {
+  border-color: #FF9800; }
+
+.house__leftBlock_breadcrumbs .home:focus {
+  color: #FF9800;
+  border-color: #FF9800; }
+
+.house__leftBlock_breadcrumbs .home:focus svg {
+  fill: #FF9800; }
+
+.house__leftBlock_breadcrumbs .home svg {
+  height: 1.14583vw;
+  width: 1.25vw;
+  margin-right: 0.67708vw;
+  fill: #000; }
+
+.house__leftBlock_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 1.14583vw;
+  color: #000000;
+  padding-top: 0.9375vw;
+  padding-bottom: 0.52083vw; }
+
+.house__leftBlock_count {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 1.51042vw;
+  color: #FF9800; }
+
+.house__leftBlock_text {
+  width: 15.625vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.72917vw;
+  line-height: 0.88542vw;
+  color: #000000; }
+
+.house__leftBlock_number {
+  width: 15.625vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.35417vw;
+  line-height: 1.66667vw;
+  text-align: center;
+  color: #000000; }
+
+.house__leftBlock .btn__MakeARequest {
+  margin-top: 2.60417vw;
+  margin-bottom: 1.5625vw; }
+
+.house__leftBlock .btn__MakeARequest button {
+  width: 15.625vw;
+  height: 4.16667vw;
+  background: #77C85B;
+  border-radius: 0.15625vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  line-height: 1.14583vw;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.house__leftBlock .btn__MakeARequest button:hover {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.15);
+  border: 0.10417vw solid #77C85B;
+  box-sizing: border-box;
+  border-radius: 0.15625vw; }
+
+.house__leftBlock .btn__call {
+  margin-bottom: 1.5625vw; }
+
+.house__leftBlock .btn__call button {
+  width: 15.625vw;
+  height: 4.16667vw;
+  background: rgba(255, 255, 255, 0.15);
+  border: 0.10417vw solid #FF9800;
+  box-sizing: border-box;
+  border-radius: 0.15625vw;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  line-height: 1.14583vw;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000; }
+
+.house__leftBlock .btn__call button:hover {
+  color: #fff;
+  background: linear-gradient(0deg, #FF9800, #FF9800), rgba(255, 255, 255, 0.15);
+  border: 0.10417vw solid #FF9800;
+  box-sizing: border-box;
+  border-radius: 0.15625vw; }
+
+.house__floor {
+  opacity: 0;
+  z-index: 2;
+  transition: .7s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 56.61458vw;
+  background: rgba(0, 0, 0, 0.8); }
+
+.house__floor.active {
+  opacity: 1;
+  width: 81.61458vw; }
+
+.house__floor.active .house__leftBlock {
+  width: 18.22917vw;
+  opacity: 1; }
+
+.house__appartments {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%); }
+
+.house__appartments svg {
+  width: 40.3125vw;
+  height: 40.3125vw; }
+
+.house__appartments svg rect.rect {
+  width: 100%;
+  height: 100%; }
 
 .house__title {
   font-family: "Montserrat";
