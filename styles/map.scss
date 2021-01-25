@@ -2,6 +2,11 @@ $text-color: #515151;
 
 .map-body {
     padding-bottom: 60px;
+    .ymaps-2-1-78-balloon__content {
+        ymaps {
+            height: auto !important;
+        }
+    }
 }
 
 .discription__title {
@@ -244,7 +249,11 @@ div .btn-secondary:hover {
 }
 
 .buildCard {
+    display: block;
     padding: 20px;
+    &:hover {
+        text-decoration: none;
+    }
     .buildName {
         font-size: 18px;
         font-weight: 600;

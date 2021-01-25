@@ -97,6 +97,7 @@
             </div>
         </div>
         <div class="container_1290">
+            <b-breadcrumb :items="breadcrumbItems" variant="transparent" class="mt-5 mb-4"></b-breadcrumb>
             <h3 class="main__title">Карта Новостроек или как найти идеальное жильё в Фергане</h3>
             <b-row>
                 <b-col>
@@ -267,6 +268,16 @@
         },
         data() {
             return {
+                breadcrumbItems: [
+                    {
+                        text: 'Главная',
+                        href: '/'
+                    },
+                    {
+                        text: 'Карта новостроек',
+                        active: true
+                    }
+                ],
                 map_deadlineRangeMinValue: 'Сдана',
                 map_deadlineRangeMaxValue: '2024',
                 map_deadlineRangeValue: 'Сдана',
@@ -331,13 +342,13 @@
         computed: {
             balloonTemplate() {
                 return `
-                    <div class="buildCard">
+                    <a href="/developers/developer/object" class="buildCard">
                         <h6 class="buildName">ЖК Фергана</h6>
                         <div class="buildImage">
                             <img src="https://mirabad.uz/upload/kelnik.adminpage/c0c/c0cf81c2a22ec8ec0c77335fe14b9533.jpg"/>
                         </div>
                         <span class="buildText">880 квартир До 18 Этажей Квартиры от 52 м2 Начало строительства 2018 год</span>
-                    </div>
+                    </a>
                 `
             }
         },

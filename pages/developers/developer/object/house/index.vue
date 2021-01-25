@@ -54,11 +54,11 @@
             <div class="house__buttons">
                 <div><b-button variant="transparent" id="floor8" class="shadow-none house__button"><span>8</span></b-button></div>
                 <div><b-button variant="transparent" id="floor7" class="shadow-none house__button"><span>7</span></b-button></div>
-                <div><b-button variant="transparent" id="floorSixBtn" @click="openFloorSixBtn(), closeFloorTwoBtn()" class="shadow-none house__button"><span>6</span></b-button></div>
+                <div><b-button variant="transparent" id="floorSixBtn" @click="openFloorSixBtn(), closeFloorTwoBtn(), closeAppartmentTwoBtnNotOpenContent()" class="shadow-none house__button"><span>6</span></b-button></div>
                 <div><b-button variant="transparent" id="floor5" class="shadow-none house__button"><span>5</span></b-button></div>
                 <div><b-button variant="transparent" id="floor4" class="shadow-none house__button"><span>4</span></b-button></div>
                 <div><b-button variant="transparent" id="floor3" class="shadow-none house__button"><span>3</span></b-button></div>
-                <div><b-button variant="transparent" id="floorTwoBtn" @click="openFloorTwoBtn(), closeFloorSixBtn()" class="shadow-none house__button"><span>2</span></b-button></div>
+                <div><b-button variant="transparent" id="floorTwoBtn" @click="openFloorTwoBtn(), closeFloorSixBtn(), closeAppartmentSixBtnNotOpenContent()" class="shadow-none house__button"><span>2</span></b-button></div>
                 <div><b-button variant="transparent" id="floor1" class="shadow-none house__button"><span>1</span></b-button></div>            
             </div>  
             <div class="house__title">Выбрать блок</div>
@@ -313,6 +313,9 @@
 
 export default {
     mounted() {
+        const appartmentTwoContent = document.getElementById('appartmentTwoContent')
+        const appartmentSixContent = document.getElementById('appartmentSixContent')
+
         const floorSix = document.getElementById('floorSix')
         const floorSixDescription = document.getElementById('floorSixDescription')
         const floorSixBtn = document.getElementById('floorSixBtn')
@@ -329,7 +332,12 @@ export default {
             }
         };        
         floorSixBtn.onmouseover = function(){
-            if ( !(floorSixContent.classList.contains("active")) && !(floorTwoContent.classList.contains("active")) ) {
+            if ( 
+                !(floorSixContent.classList.contains("active")) &&
+                !(floorTwoContent.classList.contains("active")) &&
+                !(appartmentTwoContent.classList.contains("active")) &&
+                !(appartmentSixContent.classList.contains("active"))
+            ) {
                 floorSixDescription.classList.add("active")
                 floorSix.classList.add("active")
             }
@@ -358,7 +366,12 @@ export default {
             }
         };        
         floorTwoBtn.onmouseover = function(){
-            if ( !(floorTwoContent.classList.contains("active")) && !(floorSixContent.classList.contains("active")) ) {
+            if ( 
+                !(floorSixContent.classList.contains("active")) &&
+                !(floorTwoContent.classList.contains("active")) &&
+                !(appartmentTwoContent.classList.contains("active")) &&
+                !(appartmentSixContent.classList.contains("active")) 
+            ) {
                 floorTwoDescription.classList.add("active")
                 floorTwo.classList.add("active")
             }
@@ -436,6 +449,10 @@ export default {
             appartmentTwoContent.classList.remove("active")
             floorTwoContent.classList.add("active")
         },
+        closeAppartmentTwoBtnNotOpenContent() {
+            const appartmentTwoContent = document.getElementById('appartmentTwoContent')
+            appartmentTwoContent.classList.remove("active")
+        },
         openAppartmentSixBtn() {
             const appartmentSixContent = document.getElementById('appartmentSixContent')
             const floorSixContent = document.getElementById('floorSixContent')
@@ -454,7 +471,11 @@ export default {
             const floorSixContent = document.getElementById('floorSixContent')
             appartmentSixContent.classList.remove("active")
             floorSixContent.classList.add("active")
-        }
+        },
+        closeAppartmentSixBtnNotOpenContent() {
+            const appartmentSixContent = document.getElementById('appartmentSixContent')
+            appartmentSixContent.classList.remove("active")
+        },
     }
 }
 
