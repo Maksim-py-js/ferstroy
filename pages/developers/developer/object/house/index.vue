@@ -54,11 +54,11 @@
             <div class="house__buttons">
                 <div><b-button variant="transparent" id="floor8" class="shadow-none house__button"><span>8</span></b-button></div>
                 <div><b-button variant="transparent" id="floor7" class="shadow-none house__button"><span>7</span></b-button></div>
-                <div><b-button variant="transparent" id="floorSixBtn" @click="openFloorSixBtn(), closeFloorTwoBtn(), closeAppartmentTwoBtnNotOpenContent()" class="shadow-none house__button"><span>6</span></b-button></div>
+                <div><b-button variant="transparent" id="floorSixBtn" @click="openFloorSixBtn(), closeFloorTwoBtn(), closeAppartmentTwoBtnNotOpenContent(), closeAppartmentSixBtnNotOpenContent()" class="shadow-none house__button"><span>6</span></b-button></div>
                 <div><b-button variant="transparent" id="floor5" class="shadow-none house__button"><span>5</span></b-button></div>
                 <div><b-button variant="transparent" id="floor4" class="shadow-none house__button"><span>4</span></b-button></div>
                 <div><b-button variant="transparent" id="floor3" class="shadow-none house__button"><span>3</span></b-button></div>
-                <div><b-button variant="transparent" id="floorTwoBtn" @click="openFloorTwoBtn(), closeFloorSixBtn(), closeAppartmentSixBtnNotOpenContent()" class="shadow-none house__button"><span>2</span></b-button></div>
+                <div><b-button variant="transparent" id="floorTwoBtn" @click="openFloorTwoBtn(), closeFloorSixBtn(), closeAppartmentSixBtnNotOpenContent(), closeAppartmentTwoBtnNotOpenContent()" class="shadow-none house__button"><span>2</span></b-button></div>
                 <div><b-button variant="transparent" id="floor1" class="shadow-none house__button"><span>1</span></b-button></div>            
             </div>  
             <div class="house__title">Выбрать блок</div>
@@ -310,7 +310,6 @@
 </template>
 
 <script>
-
 export default {
     mounted() {
         const appartmentTwoContent = document.getElementById('appartmentTwoContent')
@@ -478,5 +477,4 @@ export default {
         },
     }
 }
-
 </script>
