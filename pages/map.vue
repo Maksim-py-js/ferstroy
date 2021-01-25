@@ -36,9 +36,11 @@
                             <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 1 млрд сум"></b-form-input>
                         </b-input-group>
                     </div>
-                    <!-- <no-ssr>
-                        <vue-range-slider ref="slider"  v-model="value"></vue-range-slider>
-                    </no-ssr> -->
+                    <no-ssr>
+                        <div class="filter__rangeSlider">
+                            <vue-range-slider v-model="value" dot-size=30 height=10></vue-range-slider>
+                        </div>
+                    </no-ssr>
                 </div>
                 <div class="filter">
                     <div class="filterName mt-2 mb-1">Срок сдачи</div>
@@ -257,15 +259,28 @@
 
 <script>
     import 'selectize/dist/css/selectize.css'
+    import 'vue-range-component/dist/vue-range-slider.css'
     import VSelectize from '@isneezy/vue-selectize'
     import NoSSR from 'vue-no-ssr'
 
+    let components = {
+        /**
+         * Add No Server Side Render component
+         * to make client DOM math the server DOM
+         */
+        
+        VSelectize,
+        'no-ssr': NoSSR
+    }
+    if (process.browser) {
+        // in older versions of nuxt, it's process.BROWSER_BUILD
+        let VueRangeSlider = require('vue-range-component').default
+        components['vue-range-slider'] = VueRangeSlider
+    }
+
     export default { 
         layout: 'main',
-        components: { 
-            VSelectize,
-            'no-ssr': NoSSR
-        },
+        components,
         data() {
             return {
                 breadcrumbItems: [
@@ -320,7 +335,7 @@
                     'Golden House'
                 ],
                 selected_finishing: null,
-                value: 1,
+                value: [0, 100],
                 coords: [40.388404, 71.780839],
                 markers: [
                     [40.381318, 71.804794],
@@ -351,6 +366,6 @@
                     </a>
                 `
             }
-        },
+        }
     }
 </script>

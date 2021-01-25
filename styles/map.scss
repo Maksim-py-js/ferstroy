@@ -63,6 +63,35 @@ input[type=number]::-webkit-outer-spin-button {
 
 .filter {
     margin: 15px 0;
+    // rangel slider begin
+    &__rangeSlider {
+        .vue-range-slider {
+            &.slider-component {
+                .slider {
+                    .slider-piecewise {
+                        background: #fff;
+                        border: 1px solid #D2DFE8;
+                        border-radius: 100px;
+                    }
+                    .slider-process {
+                        border: 1px solid #D2DFE8;
+                        background: rgba(126, 142, 157, 0.35);
+                        box-shadow: inset 0px 0px 0px 2px #fff;
+                        padding: 2px 0;
+                    }
+                    .slider-dot  {
+                        background: url('../assets/images/svg/rangeSlIcon.svg') no-repeat 50% 50%, #FF9800;
+                        &.slider-always {
+                            .slider-tooltip-wrap {
+                                display: none !important;
+                            }
+                        }
+                    }
+                } 
+            } 
+        }
+    }
+    // rangel slider end
 }
 
 .filterName {
