@@ -23,35 +23,41 @@
                     />
                 </yandex-map>
             </no-ssr>
-            <div class="position-absolute h-99 bg-white p-3" style="top: 50%; transform: translateY(-50%); right: 20px; width: 310px;">
+            <div class="position-absolute h-99 bg-white filterBox">
                 <div class="mb-2">
                     <div class="cityBtn">Фергана и Обл</div>
                 </div>
                 <div class="filter">
-                    <div class="filterName mt-2 mb-1">Цена</div>
+                    <div class="filterName">Цена</div>
                     <div class="justify-content-between inputBox">
                         <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                            <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="от 0 млн сум"></b-form-input>
+                            <div class="main__text filter__inpputText">от {{sale[0]}} млрд сум</div>
                             <div class="line">-</div>
-                            <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 1 млрд сум"></b-form-input>
+                            <div class="main__text filter__inpputText text-right">до {{sale[1]}} млрд сум</div>
                         </b-input-group>
                     </div>
                     <no-ssr>
                         <div class="filter__rangeSlider">
-                            <vue-range-slider v-model="value" dot-size=30 height=10></vue-range-slider>
+                            <vue-range-slider v-model="sale" dotSize="30" height=10 min=0 max=300></vue-range-slider>
                         </div>
                     </no-ssr>
                 </div>
                 <div class="filter">
-                    <div class="filterName mt-2 mb-1">Срок сдачи</div>
+                    <div class="filterName">Срок сдачи</div>
                     <div class="justify-content-between inputBox">
                         <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                            <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="Сданы"></b-form-input>
+                            <div class="main__text filter__inpputText">{{deadline[0] == map_deadlineRangeMinValue ? 'Сданы' : deadline[0]}}</div>
                             <div class="line">-</div>
-                            <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="По 2024"></b-form-input>
+                            <div class="main__text filter__inpputText text-right">по {{deadline[1]}}</div>
                         </b-input-group>
                     </div>
+                    <no-ssr>
+                        <div class="filter__rangeSlider">
+                            <vue-range-slider v-model="deadline" dotSize="30" height=10 min=2021 max=2024></vue-range-slider>
+                        </div>
+                    </no-ssr>
                 </div>
+                
                 <div class="filter">
                     <b-form-group v-slot="{ ariaDescribedby }">
                         <b-form-radio-group
@@ -65,17 +71,22 @@
                     </b-form-group>
                 </div>
                 <div class="filter">
-                    <div class="filterName mt-2 mb-1">Площадь</div>
+                    <div class="filterName">Площадь</div>
                     <div class="justify-content-between inputBox">
                         <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                            <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="от 20"></b-form-input>
+                            <div class="main__text filter__inpputText">от {{square[0]}}</div>
                             <div class="line">-</div>
-                            <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 200"></b-form-input>
+                            <div class="main__text filter__inpputText text-right">до {{square[1]}}</div>
                         </b-input-group>
                     </div>
+                    <no-ssr>
+                        <div class="filter__rangeSlider">
+                            <vue-range-slider v-model="square" dotSize="30" height=10 min=20 max=200></vue-range-slider>
+                        </div>
+                    </no-ssr>
                 </div>
                 <div class="filter">
-                    <div class="filterName mt-2 mb-1">Застройщики</div>
+                    <div class="filterName">Застройщики</div>
                     <v-selectize 
                         placeholder="Выберите застройщика"
                         v-model="selected_finishing" 
@@ -114,24 +125,34 @@
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Цена</div>
+                                <div class="filterName">Цена</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="от 0 млн сум"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">от {{sale[0]}} млрд</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 1 млрд сум"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">до {{sale[1]}} млрд</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="sale" dotSize="30" height=10 min=0 max=300></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Срок сдачи</div>
+                                <div class="filterName">Срок сдачи</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="Сданы"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">{{deadline[0] == map_deadlineRangeMinValue ? 'Сданы' : deadline[0]}}</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="По 2024"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">по {{deadline[1]}}</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="deadline" dotSize="30" height=10 min=2021 max=2024></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                         </div>
                     </div>
@@ -158,24 +179,34 @@
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Цена</div>
+                                <div class="filterName">Цена</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="от 0 млн сум"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">от {{sale[0]}} млрд</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 1 млрд сум"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">до {{sale[1]}} млрд</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="sale" dotSize="30" height=10 min=0 max=300></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Срок сдачи</div>
+                                <div class="filterName">Срок сдачи</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="Сданы"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">{{deadline[0] == map_deadlineRangeMinValue ? 'Сданы' : deadline[0]}}</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="По 2024"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">по {{deadline[1]}}</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="deadline" dotSize="30" height=10 min=2021 max=2024></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                         </div>
                     </div>
@@ -211,24 +242,34 @@
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Цена</div>
+                                <div class="filterName">Цена</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="от 0 млн сум"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">от {{sale[0]}} млрд</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="до 1 млрд сум"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">до {{sale[1]}} млрд</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="sale" dotSize="30" height=10 min=0 max=300></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                             <div class="filter">
-                                <div class="filterName mt-2 mb-1">Срок сдачи</div>
+                                <div class="filterName">Срок сдачи</div>
                                 <div class="justify-content-between inputBox">
                                     <b-input-group class="d-flex shadow-none justify-content-between align-items-center">
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none" placeholder="Сданы"></b-form-input>
+                                        <div class="main__text filter__inpputText" style="width: 105px">{{deadline[0] == map_deadlineRangeMinValue ? 'Сданы' : deadline[0]}}</div>
                                         <div class="line">-</div>
-                                        <b-form-input type="number" min="0" class="border-0 shadow-none numInput" placeholder="По 2024"></b-form-input>
+                                        <div class="main__text filter__inpputText text-right" style="width: 105px">по {{deadline[1]}}</div>
                                     </b-input-group>
                                 </div>
+                                <no-ssr>
+                                    <div class="filter__rangeSlider">
+                                        <vue-range-slider v-model="deadline" dotSize="30" height=10 min=2021 max=2024></vue-range-slider>
+                                    </div>
+                                </no-ssr>
                             </div>
                         </div>
                     </div>
@@ -293,7 +334,7 @@
                         active: true
                     }
                 ],
-                map_deadlineRangeMinValue: 'Сдана',
+                map_deadlineRangeMinValue: '2021',
                 map_deadlineRangeMaxValue: '2024',
                 map_deadlineRangeValue: 'Сдана',
                 map_priceRangeValue: '200',
@@ -335,7 +376,11 @@
                     'Golden House'
                 ],
                 selected_finishing: null,
-                value: [0, 100],
+                // filter
+                sale: [0, 300],
+                deadline: [2021, 2024],
+                square: [20, 200],
+                // ------
                 coords: [40.388404, 71.780839],
                 markers: [
                     [40.381318, 71.804794],

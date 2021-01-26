@@ -23,7 +23,8 @@ $text-color: #515151;
 }
 
 .range-slider {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     margin: auto 16px;
     text-align: center;
     position: relative;
@@ -48,6 +49,8 @@ $text-color: #515151;
 
 .inputBox {
     border: 1px solid #D2DFE8;
+    padding: 10px 17px;
+    box-sizing: border-box
 }
 
 div .numInput {
@@ -61,10 +64,31 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+.filterBox {
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 20px; 
+    max-width: 363px; 
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .filter {
     margin: 15px 0;
+    .form-control {
+        padding: 0;
+    }
+    &__inpputText {
+        font-size: 16px;
+        font-weight: 500;
+        color: #7E8E9D;
+        max-width: 140px;
+        width: 100%;
+    }
     // rangel slider begin
     &__rangeSlider {
+        margin-top: 19px;
         .vue-range-slider {
             &.slider-component {
                 .slider {
@@ -100,6 +124,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;  
+    margin: 20px 0 11px;
 }
 
 div .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
@@ -230,17 +255,20 @@ div .btn-secondary:hover {
     }
     &.select-300.selectize-control {
         .selectize-input {
-            width: 300px !important;
+            max-width: 300px !important;
+            width: 100% !important;
         }    
     }
     &.select-250.selectize-control {
         .selectize-input {
-            width: 250px !important;
+            max-width: 250px !important;
+            width: 100% !important;
         }    
     }
     &.select-190.selectize-control {
         .selectize-input {
-            width: 190px !important;
+           max-width: 190px !important;
+           width: 100% !important;
         }    
     }
 }
