@@ -2891,8 +2891,8 @@ ol.breadcrumb {
     }
     &__description {
         position: absolute;
-        top: calculateVw(316);
-        left: calculateVw(457);
+        top: calculateVw(305);
+        left: calculateVw(250);
         width: calculateVw(99);
         height: calculateVw(175);
         padding: calculateVw(9) calculateVw(9) calculateVw(22);
@@ -2901,8 +2901,24 @@ ol.breadcrumb {
         opacity: 0;
         transition: .7s;
         &Two {
-            top: calculateVw(736);
-            left: calculateVw(457);
+            top: calculateVw(720);
+            left: calculateVw(250);
+        }
+        &Three {
+            top: calculateVw(615);
+            left: calculateVw(250);
+        }
+        &Four {
+            top: calculateVw(515);
+            left: calculateVw(250);
+        }
+        &Five {
+            top: calculateVw(410);
+            left: calculateVw(250);
+        }
+        &Seven {
+            top: calculateVw(200);
+            left: calculateVw(250);
         }
         &.active {
             opacity: 1;
@@ -2950,7 +2966,7 @@ ol.breadcrumb {
         top: 0;
         right: 0;
         width: calculateVw(350);
-        height: calculateVw(1087);
+        height: calculateVw(1078);
 
         background: rgba(0, 0, 0, 0.8);
         padding: calculateVw(56) 0 0 calculateVw(30);
@@ -2965,7 +2981,7 @@ ol.breadcrumb {
         transition: .7s;
 
         width: 0;
-        height: calculateVw(1087);
+        height: calculateVw(1078);
         background: #fff;
         padding: calculateVw(45) 0 0 calculateVw(20);
         z-index: 3;
@@ -3129,41 +3145,56 @@ ol.breadcrumb {
     
     &__floor {
         opacity: 0;
-        z-index: 2;
         transition: .7s;
         position: absolute;
         top: 0;
         left: 0;
         display: inline-block;
         width: 0;
-        height: calculateVw(1087);
+        height: calculateVw(1078);
         background: rgba(0, 0, 0, 0.8);
         &.active {
+            z-index: 2;
             opacity: 1;
             width: calculateVw(1567);
             .house__leftBlock {
                 width: calculateVw(350);   
                 opacity: 1;             
             }
+            .house__appartments {
+                
+                height: calculateVw(754);
+                svg {
+                    width: calculateVw(774);
+                    height: calculateVw(754);
+                }
+            }
         }
     }
     &__appartment {
         opacity: 0;
-        z-index: 2;
         transition: .7s;
         position: absolute;
         top: 0;
         left: 0;
         display: inline-block;
         width: 0;
-        height: calculateVw(1087);
+        height: calculateVw(1078);
         background: rgba(0, 0, 0, 0.8);
         &.active {
             opacity: 1;
+            z-index: 2;
             width: calculateVw(1567);
             .house__leftBlock {
                 width: calculateVw(350);   
                 opacity: 1;             
+            }
+            .house__appartmentSvg {
+                svg,
+                img {
+                    width: calculateVw(410);
+                    height: calculateVw(754);
+                }
             }
         }
     }
@@ -3173,23 +3204,63 @@ ol.breadcrumb {
         left: 50%;
         transform: translate(-25%, -50%);
         svg {
-            width: calculateVw(774);
+            width: 0;
             height: calculateVw(774);
             rect.rect {
                 width: 100%;
                 height: 100%;
             }
+            path,
+            rect {
+                transition: .7s;
+            }
+            g.openAppartment {
+                &:hover {
+                    path,
+                    rect {
+                        cursor: pointer;
+                        fill: transparent;
+                    }
+                }
+            }
             path.openAppartment,
             rect.openAppartment {
+                // fill: transparent;
+                // fill: black;
+                transition: .7s;
                 &:hover {
                     cursor: pointer;
+                    fill: transparent;
                 }
+            }
+            path.hover {
+                cursor: pointer;
+                fill: transparent;
+            }
+            rect.hover {
+                cursor: pointer;
+                fill: transparent;
             }
         }
         &_title {
            position: absolute;       
             top: calculateVw(-65);
             left: calculateVw(35);
+        }
+    }
+    &__appartmentSvg {
+        position: absolute;       
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%);
+        svg,
+        img {
+            width: 0;
+            height: calculateVw(754);
+            rect.rect {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     
@@ -3210,6 +3281,7 @@ ol.breadcrumb {
         line-height: calculateVw(22);
         color: #FF9800;
         margin-bottom: calculateVw(20);
+        white-space: nowrap;
     }
     &__buttons {
         margin-bottom: calculateVw(40);
