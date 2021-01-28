@@ -2702,8 +2702,6 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
 
 .house__description {
   position: absolute;
-  top: 15.88542vw;
-  left: 13.02083vw;
   width: 5.15625vw;
   height: 9.11458vw;
   padding: 0.46875vw 0.46875vw 1.14583vw;
@@ -2712,23 +2710,27 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
   opacity: 0;
   transition: .7s; }
 
-.house__descriptionTwo {
+.house__descriptionTwo .house__description {
   top: 37.5vw;
   left: 13.02083vw; }
 
-.house__descriptionThree {
+.house__descriptionThree .house__description {
   top: 32.03125vw;
   left: 13.02083vw; }
 
-.house__descriptionFour {
+.house__descriptionFour .house__description {
   top: 26.82292vw;
   left: 13.02083vw; }
 
-.house__descriptionFive {
+.house__descriptionFive .house__description {
   top: 21.35417vw;
   left: 13.02083vw; }
 
-.house__descriptionSeven {
+.house__descriptionSix .house__description {
+  top: 15.88542vw;
+  left: 13.02083vw; }
+
+.house__descriptionSeven .house__description {
   top: 10.41667vw;
   left: 13.02083vw; }
 
@@ -2959,7 +2961,8 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
 .house__floor.active {
   z-index: 2;
   opacity: 1;
-  width: 81.61458vw; }
+  width: 81.61458vw;
+  transition: .7s; }
 
 .house__floor.active .house__leftBlock {
   width: 18.22917vw;
@@ -2986,7 +2989,8 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
 .house__appartment.active {
   opacity: 1;
   z-index: 2;
-  width: 81.61458vw; }
+  width: 81.61458vw;
+  transition: .7s; }
 
 .house__appartment.active .house__leftBlock {
   width: 18.22917vw;
@@ -3013,6 +3017,9 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
 
 .house__appartments svg path,
 .house__appartments svg rect {
+  transition: .7s; }
+
+.house__appartments svg g.openAppartment {
   transition: .7s; }
 
 .house__appartments svg g.openAppartment:hover path,
