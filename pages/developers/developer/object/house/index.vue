@@ -39,7 +39,7 @@
             </svg>
         </div>
         <div v-for="floorDescription in floorDescriptions" :key="floorDescription.id" :class="floorDescription.position">
-            <div class="house__description" :class="{active:floorDescription.is_opened}">
+            <div class="house__description" :class="{active:floorDescription.is_open}">
                 <div class="house__description_block">
                     <div class="house__description_count">{{ floorDescription.floor }}</div>
                     <div class="house__description_name">этаж</div>
@@ -306,42 +306,42 @@ export default {
                     floor: 2,
                     count_appartments: 4,
                     position: 'house__descriptionTwo',
-                    is_opened: false
+                    is_open: false
                 },
                 {
                     id: 'floorDescription3',
                     floor: 3,
                     count_appartments: 4,
                     position: 'house__descriptionThree',
-                    is_opened: false
+                    is_open: false
                 },
                 {
                     id: 'floorDescription4',
                     floor: 4,
                     count_appartments: 4,
                     position: 'house__descriptionFour',
-                    is_opened: false
+                    is_open: false
                 },
                 {
                     id: 'floorDescription5',
                     floor: 5,
                     count_appartments: 4,
                     position: 'house__descriptionFive',
-                    is_opened: false
+                    is_open: false
                 },
                 {
                     id: 'floorDescription6',
                     floor: 6,
                     count_appartments: 4,
                     position: 'house__descriptionSix',
-                    is_opened: false
+                    is_open: false
                 },
                 {
                     id: 'floorDescription7',
                     floor: 7,
                     count_appartments: 4,
                     position: 'house__descriptionSeven',
-                    is_opened: false
+                    is_open: false
                 }
             ],
             floors: [
@@ -667,14 +667,14 @@ export default {
                 
             // }   
             // while ( true ) {
-            //     this.floorDescriptions[floorDescription].is_opened = false;
+            //     this.floorDescriptions[floorDescription].is_open = false;
             //     this.housePaths.[floorDescription].is_open = false;
             // }
-            this.floorDescriptions[floorDescription].is_opened = true;
-            this.housePaths.[floorDescription].is_open = true;        
+            this.floorDescriptions[floorDescription].is_open = true;
+            this.housePaths[floorDescription].is_open = true;        
         },
         mouseleave(floorDescription) {
-            this.floorDescriptions[floorDescription].is_opened = false;
+            this.floorDescriptions[floorDescription].is_open = false;
 
             for (var i = 0; i < this.floors.length; i++) {  
                 if (this.floors[i].is_open) {              
@@ -684,12 +684,12 @@ export default {
                 }             
             }
 
-            this.housePaths.[floorDescription].is_open = false;        
+            this.housePaths[floorDescription].is_open = false;        
         },
         openFloor(floor, floorDescription) {
             this.floors[floor].is_open = true;
 
-            this.housePaths.[floor].is_open = false;        
+            this.housePaths[floor].is_open = false;        
             
             for (var i = 0; i < this.floorDescriptions.length; i++) {
                 this.floorDescriptions[i].is_open = false;
