@@ -291,17 +291,38 @@ div .btn-secondary:hover {
     padding:40px 15px;
   }
 
-.markImage {
+.marksItem {
     display: block;
-    overflow: hidden;
-    font-size: 0;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border: 3px solid #fff;
-    
-    img {
-        width: 100px;
+    width: 89px;
+    position: relative;
+    svg {
+        path.MarkersSvg {
+            fill: #77C85B;
+        }
+    }
+    &:hover {
+        svg {
+            path.MarkersSvg {
+                fill: #FF9800;
+            }
+        }
+    }
+    .markImage {
+        position: absolute;
+        top: 6px;
+        left: 49.5%;
+        transform: translateX(-50%);
+        display: block;
+        overflow: hidden;
+        font-size: 0;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        border: 3px solid #fff;
+        
+        img {
+            width: 100px;
+        }
     }
 }
 

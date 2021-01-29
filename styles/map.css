@@ -238,7 +238,22 @@ div .btn-secondary:hover {
 .app-content {
   padding: 40px 15px; }
 
-.markImage {
+.marksItem {
+  display: block;
+  width: 89px;
+  position: relative; }
+
+.marksItem svg path.MarkersSvg {
+  fill: #77C85B; }
+
+.marksItem:hover svg path.MarkersSvg {
+  fill: #FF9800; }
+
+.marksItem .markImage {
+  position: absolute;
+  top: 6px;
+  left: 49.5%;
+  transform: translateX(-50%);
   display: block;
   overflow: hidden;
   font-size: 0;
@@ -247,7 +262,7 @@ div .btn-secondary:hover {
   height: 75px;
   border: 3px solid #fff; }
 
-.markImage img {
+.marksItem .markImage img {
   width: 100px; }
 
 .buildCard {
