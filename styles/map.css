@@ -238,16 +238,16 @@ div .btn-secondary:hover {
 .app-content {
   padding: 40px 15px; }
 
+.yamapMarker svg path.MarkersSvg {
+  fill: #77C85B; }
+
+.yamapMarker:hover svg path.MarkersSvg {
+  fill: #FF9800; }
+
 .marksItem {
   display: block;
   width: 89px;
   position: relative; }
-
-.marksItem svg path.MarkersSvg {
-  fill: #77C85B; }
-
-.marksItem:hover svg path.MarkersSvg {
-  fill: #FF9800; }
 
 .marksItem .markImage {
   position: absolute;
