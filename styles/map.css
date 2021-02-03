@@ -238,11 +238,17 @@ div .btn-secondary:hover {
 .app-content {
   padding: 40px 15px; }
 
-.yamapMarker svg path.MarkersSvg {
-  fill: #77C85B; }
+.ymaps-2-1-78-events-pane.ymaps-2-1-78-user-selection-none {
+  z-index: 0 !important; }
 
-.yamapMarker:hover svg path.MarkersSvg {
-  fill: #FF9800; }
+.ymaps-2-1-78-placemark-overlay path.MarkersSvg {
+  fill: #77C85B !important; }
+
+.ymaps-2-1-78-placemark-overlay:hover {
+  cursor: pointer; }
+
+.ymaps-2-1-78-placemark-overlay:hover path.MarkersSvg {
+  fill: #FF9800 !important; }
 
 .marksItem {
   display: block;
