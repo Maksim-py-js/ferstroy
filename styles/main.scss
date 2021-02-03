@@ -3504,5 +3504,10 @@ div .modal-body {
         border-radius: 3px;
         max-width: 270px;
         width: 100%;
+        outline: none;
+        border: 3px solid #77C85B;
+        &:hover {
+            background: none;
+        }
     }
 }

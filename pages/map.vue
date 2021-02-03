@@ -14,7 +14,6 @@
                         :icon="markerIcon"
                         :balloon-template="balloonTemplate"
                         :options="balloonOptions"
-                        class="yamapMarker"
                     />
                     <ymap-marker 
                         marker-id="124" 
@@ -22,11 +21,10 @@
                         :icon="markerIcon"      
                         :balloon-template="balloonTemplate"
                         :options="balloonOptions"
-                        class="yamapMarker"
                     />
                 </yandex-map>
             </no-ssr>
-            <div class="position-absolute h-99 bg-white filterBox">
+            <!-- <div class="position-absolute h-99 bg-white filterBox">
                 <div class="mb-2">
                     <div class="cityBtn">Фергана и Обл</div>
                 </div>
@@ -110,7 +108,7 @@
                         ></b-form-radio-group>
                     </b-form-group>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container_1290">
             <b-breadcrumb :items="breadcrumbItems" variant="transparent" class="mt-5 mb-4"></b-breadcrumb>
@@ -175,7 +173,7 @@
                         <br/>
                         Квартиры в новостройках Ферганы пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                     </span>
-                    <div class="map">
+                    <!-- <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95913.44056607499!2d69.23376702582306!3d41.30244525704403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1609333243458!5m2!1sru!2s" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
@@ -212,7 +210,7 @@
                                 </no-ssr>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
@@ -238,7 +236,7 @@
                         <br/>
                         Квартиры в новостройках Ферганы пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
                     </span>
-                    <div class="map">
+                    <!-- <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95913.44056607499!2d69.23376702582306!3d41.30244525704403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1609333243458!5m2!1sru!2s" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
@@ -275,7 +273,7 @@
                                 </no-ssr>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
                         пользуются большим спросом, на нашем сайте можете размещать не ограниченное колличество квартир в любой из категорий. А так же размещать рекламные и информационные статьи. Удачи!
@@ -306,6 +304,7 @@
     import 'vue-range-component/dist/vue-range-slider.css'
     import VSelectize from '@isneezy/vue-selectize'
     import NoSSR from 'vue-no-ssr'
+    import { loadYmap } from 'vue-yandex-maps'
     let components = {
         /**
          * Add No Server Side Render component
