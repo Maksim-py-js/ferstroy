@@ -14,7 +14,6 @@
                         :icon="markerIcon"
                         :balloon-template="balloonTemplate"
                         :options="balloonOptions"
-                        class="yamapMarker"
                     />
                     <ymap-marker 
                         marker-id="124" 
@@ -22,7 +21,6 @@
                         :icon="markerIcon"      
                         :balloon-template="balloonTemplate"
                         :options="balloonOptions"
-                        class="yamapMarker"
                     />
                 </yandex-map>
             </no-ssr>
@@ -306,6 +304,7 @@
     import 'vue-range-component/dist/vue-range-slider.css'
     import VSelectize from '@isneezy/vue-selectize'
     import NoSSR from 'vue-no-ssr'
+    import { loadYmap } from 'vue-yandex-maps'
     let components = {
         /**
          * Add No Server Side Render component

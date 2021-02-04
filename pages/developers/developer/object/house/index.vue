@@ -111,21 +111,13 @@
                     <div class="house__leftBlock_title">Описание</div>
                     <div class="house__leftBlock_text">{{ floor.text }}</div>
                     <div class="btn__MakeARequest">
-                        <b-button variant="transparent" @click="floor.modalShow = !floor.modalShow"><span>Оформить заявку</span></b-button>
-
-                        <b-modal 
-                            v-model="floor.modalShow" 
-                            centered
-                            :hideFooter="true"
-                            :hideHeader="true"
-                            :hideHeaderClose="true"
-                            :lazy='true'
-                            id="modal-request"
-                        >
+                        <b-button class="shadow-none" variant="transparent" v-b-modal="'modalRequestFloor' + floor.id"><span>Оформить заявку</span></b-button>
+                        
+                        <b-modal :id="'modalRequestFloor' + floor.id" centered hide-footer hide-header>
                             <div class="modalBox">
                                 <div class="modal__header d-flex justify-content-between align-items-center">
                                     <h6 class="modal__title">Связаться с нами</h6>
-                                    <div class="modal__closeBtn" @click="$bvModal.hide('modal-request')">
+                                    <div class="modal__closeBtn"  @click="$bvModal.hide('modalRequestFloor' + floor.id)">
                                         <img src="@/assets/images/svg/close.svg"/>
                                     </div>
                                 </div>
@@ -149,14 +141,14 @@
                                         <textarea class="modal__Input" rows="8"/>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <button class="modal__button">отправить</button>
+                                        <b-button  variant="transparent" class="modal__button shadow-none">отправить</b-button>
                                     </div>
                                 </form>
-                            </div>   
-                        </b-modal>
+                            </div>                    
+                        </b-modal> 
                     </div>
                     <div class="btn__call">
-                        <b-button variant="transparent" @click="floor.numberActive = !floor.numberActive"><span>Позвонить</span></b-button>
+                        <b-button variant="transparent shadow-none" @click="floor.numberActive = true"><span>Позвонить</span></b-button>
                     </div>
                     <div class="house__leftBlock_number" :class="{active:floor.numberActive}">{{ floor.phoneNumber }}</div>
                 </div>
@@ -193,12 +185,46 @@
                     <div class="house__leftBlock_title">Описание</div>
                     <div class="house__leftBlock_text">{{ appartment.text }}</div>
                     <div class="btn__MakeARequest">
-                        <b-button variant="transparent"><span>Оформить заявку</span></b-button>
+                        <b-button class="shadow-none" variant="transparent" v-b-modal="'modalRequest' + appartment.index"><span>Оформить заявку</span></b-button>
+                        
+                        <b-modal :id="'modalRequest' + appartment.index" centered hide-footer hide-header>
+                            <div class="modalBox">
+                                <div class="modal__header d-flex justify-content-between align-items-center">
+                                    <h6 class="modal__title">Связаться с нами</h6>
+                                    <div class="modal__closeBtn"  @click="$bvModal.hide('modalRequest' + appartment.index)">
+                                        <img src="@/assets/images/svg/close.svg"/>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="modal__inputBox">
+                                        <div class="modal__textInput">Ф.И.О<span class="redText">*</span></div>
+                                        <input class="modal__Input" type="text"/>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="modal__inputBox">
+                                            <div class="modal__textInput">Серия паспорта</div>
+                                            <input class="modal__Input" style="width: 270px;" type="text"/>
+                                        </div>
+                                        <div class="modal__inputBox">
+                                            <div class="modal__textInput">Номер телефона<span class="redText">*</span></div>
+                                            <input class="modal__Input" style="width: 270px;" type="text"/>
+                                        </div>
+                                    </div>
+                                    <div class="modal__inputBox">
+                                        <div class="modal__textInput">Ваше сообщение</div>
+                                        <textarea class="modal__Input" rows="8"/>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <b-button  variant="transparent" class="modal__button shadow-none">отправить</b-button>
+                                    </div>
+                                </form>
+                            </div>                    
+                        </b-modal> 
                     </div>
                     <div class="btn__call">
-                        <b-button variant="transparent"><span>Позвонить</span></b-button>
+                        <b-button variant="transparent shadow-none" @click="appartment.numberActive = true"><span>Позвонить</span></b-button>
                     </div>
-                    <div class="house__leftBlock_number">{{ appartment.phoneNumber }}</div>
+                    <div class="house__leftBlock_number" :class="{active:appartment.numberActive}">{{ appartment.phoneNumber }}</div>
                 </div>
                 <div class="house__appartmentSvg">
                     <img :src="require(`~/assets/images/svg/appartments/${appartment.image}.svg`)">        
@@ -499,7 +525,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 0,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 1,
@@ -509,7 +536,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 0,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 2,
@@ -519,7 +547,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 0,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 3,
@@ -529,7 +558,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 0,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
 
                 {
@@ -540,7 +570,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 1,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 5,
@@ -550,7 +581,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 1,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 6,
@@ -560,7 +592,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 1,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 7,
@@ -570,7 +603,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 1,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
 
                 {
@@ -581,7 +615,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 2,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 9,
@@ -591,7 +626,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 2,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 10,
@@ -601,7 +637,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 2,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 11,
@@ -611,7 +648,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 2,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
 
                 {
@@ -622,7 +660,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 3,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 13,
@@ -632,7 +671,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 3,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 14,
@@ -642,7 +682,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 3,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 15,
@@ -652,7 +693,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 3,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
 
                 {
@@ -663,7 +705,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 4,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 17,
@@ -673,7 +716,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 4,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 18,
@@ -683,7 +727,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 4,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 19,
@@ -693,7 +738,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 4,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
 
                 {
@@ -704,7 +750,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 5,
-                    image: 1
+                    image: 1,
+                    numberActive: false
                 },
                 {
                     index: 21,
@@ -714,7 +761,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 5,
-                    image: 2
+                    image: 2,
+                    numberActive: false
                 },
                 {
                     index: 22,
@@ -724,7 +772,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 5,
-                    image: 3
+                    image: 3,
+                    numberActive: false
                 },
                 {
                     index: 23,
@@ -734,7 +783,8 @@ export default {
                     phoneNumber: '998 (90) 900 00 00',
                     is_open: false,
                     floor: 5,
-                    image: 4
+                    image: 4,
+                    numberActive: false
                 },
             ]
         }
@@ -819,17 +869,6 @@ export default {
         closeAppartment(appartment, floor) {
             this.appartments[appartment].is_open = false;
             this.floors[floor].is_open = true;
-        },
-        showMsgBoxTwo() {
-            this.$bvModal.msgBoxOk('Data was submitted successfully', {
-                title: 'Confirmation',
-                size: 'sm',
-                buttonSize: 'sm',
-                okVariant: 'success',
-                headerClass: 'p-2 border-bottom-0',
-                footerClass: 'p-2 border-top-0',
-                centered: true
-            })
         }
     }
 }
