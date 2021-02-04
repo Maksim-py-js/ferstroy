@@ -2760,13 +2760,17 @@ ol.breadcrumb {
     svg .pathHouse:hover{
         fill: white;
     }
-     
+    .active {
+        .svg__object_block {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
     &_block {
         opacity: 0;
+        z-index: -3;
         transition: .7s;
         position: absolute;
-        top: 438px;
-        left: 943px;
         background: #FFFFFF;
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
         padding: 30px 40px 40px 30px;
@@ -2778,8 +2782,32 @@ ol.breadcrumb {
             border-bottom: 56px solid transparent;            
             border-right: 43px solid white; 
         }
-        &.active {
-            opacity: 1;
+        
+        &.descr1 {
+            top: 330px;
+            left: 688px;
+        }
+        &.descr2 {
+            top: 438px;
+            left: 943px;
+        }
+        &.descr3 {
+            top: 630px;
+            left: 1310px;
+
+        }
+        &.descr4 {
+            top: 90px;
+            left: 960px;
+        }
+        &.descr5 {
+            top: 258px;
+            left: 1120px;
+        }
+        &.descr6 {
+            top: 300px;
+            left: 1460px;
+            margin-right: 40px;
         }
     }  
     &_title {
@@ -2798,7 +2826,8 @@ ol.breadcrumb {
         font-size: 18px;
         line-height: 22px;
         color: #000000;
-        width: 454px;
+        width: 100%;
+        max-width: 454px;
     }
 }
 
