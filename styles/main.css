@@ -3214,6 +3214,10 @@ div .modal-body {
   padding: 30px;
   box-sizing: border-box; }
 
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  opacity: 1 !important; }
+
 .modal__title {
   font-size: 30px;
   font-weight: 500;
