@@ -419,7 +419,7 @@
                                     >
                                 </div>
                                 <div class="reviews__form_label">Оценка компании</div>
-                                <img src="@/assets/images/svg/stars/0.svg" style="margin-top: 14px;">
+                                <img src="@/assets/images/svg/stars/0.svg" class="mt-14">
                                 <div class="reviews__form_label">Отзывы</div>
                                 <div class="reviews__form_textarea">
                                     <textarea 

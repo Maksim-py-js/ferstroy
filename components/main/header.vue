@@ -10,7 +10,7 @@
         <div class="header_sm">
             <div class="container_1290 position-relative">
                 <b-navbar toggleable="lg" variant="transparent" class="p-0 text-center align-items-center">
-                    <div class="d-flex justify-content-between align-items-center w-100" style="margin-top: 20px;">
+                    <div class="d-flex justify-content-between align-items-center w-100 mt-20">
                         <nuxt-link to="/" class="header__logo">
                             <img src="@/assets/images/svg/logo/russian-light.svg">
                         </nuxt-link>

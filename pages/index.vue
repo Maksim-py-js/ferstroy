@@ -868,7 +868,7 @@
         </b-button>
       </div>
       <div class="buildings__block_pagination d-flex justify-content-center">
-        <div style="margin-right: 20px;" v-for="item in pagination" :key="item.id">
+        <div class="mr-20" v-for="item in pagination" :key="item.id">
           <input 
             type="radio" 
             class="buildings__radio" 

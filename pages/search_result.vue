@@ -27,11 +27,10 @@
                                 placeholder="Выберите регион"
                                 v-model="selected_apartmantPerFloor" 
                                 :options="apartmantPerFloor"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="width: 260px; margin: 0;"
+                                class="searchResult__leftRow_selectize select-260 width-260 m-0"
                             />
                             <div class="position-relative">                        
-                                <div class="position-absolute" style="top: 50%; transform: translateY(-50%); left: 20px;">
+                                <div class="position-absolute pos-a-left-20" style="top: 50%; transform: translateY(-50%);">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#77C85B" d="M7.37201 14.7559C8.88978 14.7559 10.2919 14.2929 11.4628 13.5118L15.6981 17.7505C16.0307 18.0832 16.5799 18.0832 16.9267 17.7505L17.7507 16.9259C18.0831 16.5931 18.0831 16.0434 17.7507 15.6962L13.5009 11.472C14.2813 10.3002 14.744 8.89693 14.744 7.37794C14.744 3.31284 11.4338 0 7.37201 0C3.31018 0 0 3.31284 0 7.37794C0 11.4429 3.29572 14.7559 7.37201 14.7559ZM7.37201 2.89331C9.84381 2.89331 11.853 4.90416 11.853 7.37794C11.853 9.85172 9.84381 11.8626 7.37201 11.8626C4.90022 11.8626 2.89099 9.85172 2.89099 7.37794C2.89099 4.90416 4.90022 2.89331 7.37201 2.89331Z"/>
                                     </svg>
@@ -41,9 +40,9 @@
                         </div>
                         <div>
                             <div class="searchResult__leftRow_title">Комнат площадь</div>
-                            <div class="d-flex" style="margin-top: 16px;">
+                            <div class="d-flex mt-16">
                                 <div class="searchResult__leftRow__txtRoom">Студия</div>
-                                <div style="margin-right: 6px;" v-for="item in roominessItems" :key="item.id">
+                                <div class="mr-6" v-for="item in roominessItems" :key="item.id">
                                     <input 
                                         type="radio" 
                                         class="searchResult__leftRow_radio" 
@@ -72,29 +71,25 @@
                                 placeholder="Отделка"
                                 v-model="selected_finishing" 
                                 :options="finishing"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="width: 260px; margin: 0 0 4px 0;"
+                                class="searchResult__leftRow_selectize select-260 mb-4p"
                             />
                             <v-selectize 
                                 placeholder="Отделка"
                                 v-model="selected_finishing" 
                                 :options="finishing"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="width: 260px; margin: 0 0 4px 0;"
+                                class="searchResult__leftRow_selectize select-260 mb-4p"
                             />
                             <v-selectize 
                                 placeholder="Отделка"
                                 v-model="selected_finishing" 
                                 :options="finishing"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="width: 260px; margin: 0 0 4px 0;"
+                                class="searchResult__leftRow_selectize select-260 mb-4p"
                             />
                             <v-selectize 
                                 placeholder="Отделка"
                                 v-model="selected_finishing" 
                                 :options="finishing"
-                                class="searchResult__leftRow_selectize select-260"
-                                style="width: 260px; margin: 0 0 4px 0;"
+                                class="searchResult__leftRow_selectize select-260 mb-4p"
                             />
                         </div>
                         <b-button variant="transparent" class="searchResult__leftRow_confirmBtn shadow-none" to="/search_result">                          
@@ -138,8 +133,8 @@
                             </b-button>
                         </div>
                     </div>
-                    <div class="searchResult__leftRow_mainTitle" style="margin-top: 43px; margin-bottom: 0;">Популярные новостройки</div>
-                    <div class="searchResult__leftRowCard_sm"  style="margin-top: 15px;">
+                    <div class="searchResult__leftRow_mainTitle mt-43 mb-0">Популярные новостройки</div>
+                    <div class="searchResult__leftRowCard_sm mt-15">
                         <div class="leftRowCard__title d-flex justify-content-between align-items-center">
                             <div class="leftRowCard__title_text">Вы просматривали</div>
                             <div class="leftRowCard__title_image"><img src="@/assets/images/svg/eye-icon.svg"></div>
@@ -790,7 +785,7 @@
                             </b-button>
                         </div>
                         <div class="buildings__block_pagination d-flex justify-content-center">
-                            <div style="margin-right: 20px;" v-for="item in pagination" :key="item.id">
+                            <div class="mr-20" v-for="item in pagination" :key="item.id">
                             <input 
                                 type="radio" 
                                 class="buildings__radio" 
