@@ -2,7 +2,58 @@
   $vwSize: $size * 100 / 1920;
   @return #{$vwSize}vw;
 }
+.mt-43 {
+    margin-top: 43px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-14 {
+    margin-top: 14px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mr-6 {
+    margin-right: 6px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.ml-9 {
+    margin-left: 9px;
+}
+.mb-4p {
+    margin: 0 0 4px 0;
+}
+.px-20 {
+    padding: 20px 0;
+}
 
+.p-13-56 {
+    padding: 13px 56px;
+}
+.width-200 {
+    width: 200px !important;
+}
+.width-260 {
+    width: 260px !important;
+}
+.width-320 {
+    width: 320px !important;
+}
+.pos-a-left-20 {
+    left: 20px;
+}
 .header {
     height: 100vh;
     min-height: 940px;
@@ -2760,13 +2811,17 @@ ol.breadcrumb {
     svg .pathHouse:hover{
         fill: white;
     }
-     
+    .active {
+        .svg__object_block {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
     &_block {
         opacity: 0;
+        z-index: -3;
         transition: .7s;
         position: absolute;
-        top: 438px;
-        left: 943px;
         background: #FFFFFF;
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
         padding: 30px 40px 40px 30px;
@@ -2778,8 +2833,32 @@ ol.breadcrumb {
             border-bottom: 56px solid transparent;            
             border-right: 43px solid white; 
         }
-        &.active {
-            opacity: 1;
+        
+        &.descr1 {
+            top: 330px;
+            left: 688px;
+        }
+        &.descr2 {
+            top: 438px;
+            left: 943px;
+        }
+        &.descr3 {
+            top: 630px;
+            left: 1310px;
+
+        }
+        &.descr4 {
+            top: 90px;
+            left: 960px;
+        }
+        &.descr5 {
+            top: 258px;
+            left: 1120px;
+        }
+        &.descr6 {
+            top: 300px;
+            left: 1460px;
+            margin-right: 40px;
         }
     }  
     &_title {
@@ -2798,7 +2877,8 @@ ol.breadcrumb {
         font-size: 18px;
         line-height: 22px;
         color: #000000;
-        width: 454px;
+        width: 100%;
+        max-width: 454px;
     }
 }
 
