@@ -467,11 +467,9 @@
                     'Golden House'
                 ],
                 selected_finishing: null,
-                // filter
                 sale: [0, 300],
                 deadline: [2021, 2024],
                 square: [20, 200],
-                // ------
                 coords: [40.388404, 71.780839],
                 markers: [
                     [40.381318, 71.804794],
