@@ -7,6 +7,481 @@
         <nuxt-link to="/" class="bestsellers__seeAll text-decoration-none">367</nuxt-link>
       </div>
       <div class="d-flex flex-wrap bestsellers__cards">
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 52.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textDisactive">Строиться</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 53.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textActive">Построено</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 54.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textDisactive">Строиться</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 55.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textDisactive">Строиться</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 56.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textActive">Построено</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 57.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textActive">Построено</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 58.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textActive">Построено</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/developers/developer/object" class="linkCard">
+          <div class="card">
+            <div class="card__image">
+              <img src="@/assets/images/png/cards/image 59.png">
+            </div>
+            <div class="card__image_bg"></div>
+            <div class="card__content_top d-flex justify-content-between align-items-top">
+              <div>
+                <div class="card__companyName">BudCapital</div>
+                <div class="card__buildName">ЖК Star City</div>
+              </div>
+              <div class="card__rating d-flex">
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
+                  <div class="card__rating_text">4.5</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
+                  <div class="card__rating_text">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="card__content_bottom">
+              <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
+              <div class="card__price">от <span>2.07</span> млн сум м2</div>
+              <div class="card__status d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/discount.svg">
+                    <span class="card__status_tooltip">В рассрочку</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/clock.svg">
+                    <span class="card__status_tooltip">Время</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/key.svg">
+                    <span class="card__status_tooltip">Под ключ</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/warranty.svg">
+                    <span class="card__status_tooltip">Гарантия</span>
+                  </div>
+                  <div class="card__status_image">
+                    <img src="@/assets/images/svg/card-icons/without_finishing.svg">
+                    <span class="card__status_tooltip">Без отделки</span>
+                  </div>
+                </div>
+                <div class="card__status_text card__status_textDisactive">Строиться</div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </nuxt-link>
+      </div>
+    </div>
+  </div>
+  <div class="buildings container_1290">
+    <div class="d-flex flex-wrap buildings__cards_lg">
+      <div class="card_lg">
+        <div class="card_lg__image">
+          <img src="@/assets/images/png/cards/image 60.png">
+        </div>
+        <div class="card_lg__image_bg"></div>
+        <div class="card_lg__content position-relative">
+          <div class="card_lg__companyName">BudCapital</div>
+          <div class="card_lg__buildName">ЖК Star City</div>
+          <div class="card_lg__discounts">Скидка на строящиеся квартиры 20%</div>
+          <div class="card_lg__price">Квартиры от 150 млн сум</div>
+          <b-button variant="transparent" class="card_lg__btn shadow-none">Получить консультацию</b-button>
+        </div>
+      </div>
+      <div class="card_lg">
+        <div class="card_lg__image">
+          <img src="@/assets/images/png/cards/image 61.png">
+        </div>
+        <div class="card_lg__image_bg"></div>
+        <div class="card_lg__content position-relative">
+          <div class="card_lg__companyName">BudCapital</div>
+          <div class="card_lg__buildName">ЖК Star City</div>
+          <div class="card_lg__discounts">Скидка на строящиеся квартиры 20%</div>
+          <div class="card_lg__price">Квартиры от 150 млн сум</div>
+          <b-button variant="transparent" class="card_lg__btn shadow-none">Получить консультацию</b-button>
+        </div>
+      </div>
+    </div>
+    <div class="main__title">Все новостройки</div>        
+    <div class="d-flex flex-wrap buildings__cards">
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 52.png">
@@ -57,7 +532,11 @@
               <div class="card__status_text card__status_textDisactive">Строиться</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 53.png">
@@ -108,7 +587,11 @@
               <div class="card__status_text card__status_textActive">Построено</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 54.png">
@@ -159,7 +642,11 @@
               <div class="card__status_text card__status_textDisactive">Строиться</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 55.png">
@@ -210,7 +697,11 @@
               <div class="card__status_text card__status_textDisactive">Строиться</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 56.png">
@@ -261,7 +752,11 @@
               <div class="card__status_text card__status_textActive">Построено</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 57.png">
@@ -312,7 +807,11 @@
               <div class="card__status_text card__status_textActive">Построено</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 58.png">
@@ -363,7 +862,11 @@
               <div class="card__status_text card__status_textActive">Построено</div>
             </div>
           </div>
+        
+        
         </div>
+      </nuxt-link>
+      <nuxt-link to="/developers/developer/object" class="linkCard">
         <div class="card">
           <div class="card__image">
             <img src="@/assets/images/png/cards/image 59.png">
@@ -414,449 +917,10 @@
               <div class="card__status_text card__status_textDisactive">Строиться</div>
             </div>
           </div>
+        
+        
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="buildings container_1290">
-    <div class="d-flex flex-wrap buildings__cards_lg">
-      <div class="card_lg">
-        <div class="card_lg__image">
-          <img src="@/assets/images/png/cards/image 60.png">
-        </div>
-        <div class="card_lg__image_bg"></div>
-        <div class="card_lg__content position-relative">
-          <div class="card_lg__companyName">BudCapital</div>
-          <div class="card_lg__buildName">ЖК Star City</div>
-          <div class="card_lg__discounts">Скидка на строящиеся квартиры 20%</div>
-          <div class="card_lg__price">Квартиры от 150 млн сум</div>
-          <b-button variant="transparent" class="card_lg__btn shadow-none">Получить консультацию</b-button>
-        </div>
-      </div>
-      <div class="card_lg">
-        <div class="card_lg__image">
-          <img src="@/assets/images/png/cards/image 61.png">
-        </div>
-        <div class="card_lg__image_bg"></div>
-        <div class="card_lg__content position-relative">
-          <div class="card_lg__companyName">BudCapital</div>
-          <div class="card_lg__buildName">ЖК Star City</div>
-          <div class="card_lg__discounts">Скидка на строящиеся квартиры 20%</div>
-          <div class="card_lg__price">Квартиры от 150 млн сум</div>
-          <b-button variant="transparent" class="card_lg__btn shadow-none">Получить консультацию</b-button>
-        </div>
-      </div>
-    </div>
-    <div class="main__title">Все новостройки</div>        
-    <div class="d-flex flex-wrap buildings__cards">
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 52.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textDisactive">Строиться</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 53.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textActive">Построено</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 54.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textDisactive">Строиться</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 55.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textDisactive">Строиться</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 56.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textActive">Построено</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 57.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textActive">Построено</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 58.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textActive">Построено</div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__image">
-          <img src="@/assets/images/png/cards/image 59.png">
-        </div>
-        <div class="card__image_bg"></div>
-        <div class="card__content_top d-flex justify-content-between align-items-top">
-          <div>
-            <div class="card__companyName">BudCapital</div>
-            <div class="card__buildName">ЖК Star City</div>
-          </div>
-          <div class="card__rating d-flex">
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/star.svg"></div>
-              <div class="card__rating_text">4.5</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="card__rating_image"><img src="@/assets/images/svg/card-icons/message.svg"></div>
-              <div class="card__rating_text">25</div>
-            </div>
-          </div>
-        </div>
-        <div class="card__content_bottom">
-          <b-button variant="transparent" class="card__btnStay shadow-none">Осталось - 100 квартир</b-button>
-          <div class="card__price">от <span>2.07</span> млн сум м2</div>
-          <div class="card__status d-flex justify-content-between">
-            <div class="d-flex">
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/discount.svg">
-                <span class="card__status_tooltip">В рассрочку</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/clock.svg">
-                <span class="card__status_tooltip">Время</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/key.svg">
-                <span class="card__status_tooltip">Под ключ</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/warranty.svg">
-                <span class="card__status_tooltip">Гарантия</span>
-              </div>
-              <div class="card__status_image">
-                <img src="@/assets/images/svg/card-icons/without_finishing.svg">
-                <span class="card__status_tooltip">Без отделки</span>
-              </div>
-            </div>
-            <div class="card__status_text card__status_textDisactive">Строиться</div>
-          </div>
-        </div>
-      </div>
+      </nuxt-link>
     </div>
     <div class="buildings__block">
       <div class="text-center">

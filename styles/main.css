@@ -1234,6 +1234,11 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
   content: '';
   background: none; }
 
+a.linkCard {
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
 .card {
   width: 300px;
   height: 400px;
@@ -1523,20 +1528,20 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
   color: #000000;
   box-shadow: 0px 4px 20px #cacaca; }
 
-.bestsellers__cards .card {
+.bestsellers__cards .linkCard {
   margin-right: 30px; }
 
-.bestsellers__cards .card:nth-child(4n) {
+.bestsellers__cards .linkCard:nth-child(4n) {
   margin-right: 0; }
 
 .buildings {
   padding: 50px 0 40px 0;
   background: #FFFFFF; }
 
-.buildings__cards .card {
+.buildings__cards .linkCard {
   margin-right: 30px; }
 
-.buildings__cards .card:nth-child(4n) {
+.buildings__cards .linkCard:nth-child(4n) {
   margin-right: 0; }
 
 .buildings__cards_lg {
@@ -2086,10 +2091,10 @@ ol.breadcrumb li.breadcrumb-item:first-child:before {
   line-height: 18px;
   color: #000000; }
 
-.searchResult__cards .card {
+.searchResult__cards .linkCard {
   margin-right: 30px; }
 
-.searchResult__cards .card:nth-child(3n) {
+.searchResult__cards .linkCard:nth-child(3n) {
   margin-right: 0; }
 
 .searchResult__chckbx-120,
