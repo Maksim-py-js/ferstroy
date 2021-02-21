@@ -1935,7 +1935,7 @@ ol.breadcrumb {
                             line-height: 20px;
                             color: #000000;
                         }
-                        &_image {}
+                        // &_image {}
                     }
                     &__image {
                         width: 80px;
@@ -1948,7 +1948,7 @@ ol.breadcrumb {
                             border-radius: 3px;
                         }
                     }
-                    &__description {}
+                    // &__description {}
                     &__country {
                         font-family: "Montserrat";
                         font-style: normal;
@@ -2579,9 +2579,9 @@ ol.breadcrumb {
         box-sizing: border-box;
         border-radius: 3px;
         .message {
-            &__title {
+            // &__title {
 
-            }
+            // }
             &__name {
                 font-family: "Montserrat";
                 font-style: normal;
@@ -2602,9 +2602,9 @@ ol.breadcrumb {
                     color: #A4A4A4;
                     margin-right: 20px;
                 }
-                &_stars {
+                // &_stars {
 
-                }
+                // }
             }            
         }
     }
@@ -3524,7 +3524,7 @@ ol.breadcrumb {
 }
 
 // by Pavlik
-div .modal-body {
+div  .modal-body {
     background: #F3F5FA;
     width: 630px;
     padding: 30px;

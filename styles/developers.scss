@@ -172,7 +172,8 @@
         box-sizing: border-box;
         overflow: auto;
         white-space: nowrap;
-        width: 520px;
+        max-width: 520px;
+        width: 100%;
         padding: 100px 0 10px;
         margin-top: -100px;
         font-size: 0;
@@ -194,7 +195,8 @@
     &__objectItem {
         position: relative;
         display: inline-block;
-        width: 150px;
+        max-width: 150px;
+        width: 100%;
         font-size: 0;
         border: 2px solid transparent;
         img {

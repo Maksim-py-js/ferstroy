@@ -157,6 +157,10 @@ div div .btn-secondary {
     margin: vwSize(1.5);
 }
 
+.card-body div div .btn-secondary {
+    margin: 0;
+}
+
 div .btn-secondary:hover {
     background: transparent;
     color: $text-color;

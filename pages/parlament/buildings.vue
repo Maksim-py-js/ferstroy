@@ -251,11 +251,11 @@
                     foreman: 'Захридин'//имя застройщика
                 },
                 items: [
-                    { name: 'Давид', rating: 5, phone: '+998 90 987 43 21', history: '2016-2024' },
-                    { name: 'Иван', rating: 4, phone: '+998 99 985 45 65', history: '2016-2024' },
-                    { name: 'Илья', rating: 3, phone: '+998 95 943 56 72', history: '2016-2024' },
-                    { name: 'Ким', rating: 5, phone: '+998 95 847 34 23', history: '2016-2024' },
-                    { name: 'Карим', rating: 3, phone: '+998 90 987 43 21', history: '2016-2024' },
+                    { name: 'Anol Group', rating: 5, phone: '+998 90 987 43 21', history: '2016-2024' },
+                    { name: 'AkayCity', rating: 4, phone: '+998 99 985 45 65', history: '2016-2024' },
+                    { name: 'Aparto', rating: 3, phone: '+998 95 943 56 72', history: '2016-2024' },
+                    { name: 'Aristocrat Home', rating: 5, phone: '+998 95 847 34 23', history: '2016-2024' },
+                    { name: 'Arjun', rating: 3, phone: '+998 90 987 43 21', history: '2016-2024' },
                     { name: 'Asklepiy svift', rating: 5, phone: '+998 90 987 43 21', history: '2016-2024' },
                     { name: 'Asser Stroy Servis', rating: 5, phone: '+998 90 987 43 21', history: '2016-2024' },
                     { name: 'BB-Stroy', rating: 2, phone: '+998 90 987 43 21', history: '2016-2024' },

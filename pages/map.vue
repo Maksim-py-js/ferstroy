@@ -25,13 +25,15 @@
                         class="mapMarker"
                     />
                     <script>
-                        let markerPath = document.querySelectorAll('ymaps.ymaps-2-1-78-inner-panes');
-                        let markerBox = markerPath[0].children;
-                        console.log(markerBox.item(4));
+                        document.addEventListener("DOMContentLoaded", function() {
+                            let markerPath = document.querySelectorAll('ymaps.ymaps-2-1-78-inner-panes');
+                            let markerBox = markerPath[0].children;
+                            console.log(markerBox);
+                        });
                     </script>
                 </yandex-map>
             </no-ssr>
-            <div class="position-absolute h-99 bg-white filterBox">
+            <!-- <div class="position-absolute h-99 bg-white filterBox">
                 <div class="mb-2">
                     <div class="cityBtn">Фергана и Обл</div>
                 </div>
@@ -115,7 +117,7 @@
                         ></b-form-radio-group>
                     </b-form-group>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container_1290">
             <b-breadcrumb :items="breadcrumbItems" variant="transparent" class="mt-5 mb-4"></b-breadcrumb>
@@ -149,14 +151,9 @@
                                     :options="balloonOptions"
                                     class="mapMarker"
                                 />
-                                <script>
-                                    let markerPath = document.querySelectorAll('ymaps.ymaps-2-1-78-inner-panes');
-                                    let markerBox = markerPath[0].children;
-                                    console.log(markerBox.item(4));
-                                </script>
                             </yandex-map>
                         </no-ssr>
-                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -190,7 +187,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
@@ -231,14 +228,9 @@
                                     :options="balloonOptions"
                                     class="mapMarker"
                                 />
-                                <script>
-                                    let markerPath = document.querySelectorAll('ymaps.ymaps-2-1-78-inner-panes');
-                                    let markerBox = markerPath[0].children;
-                                    console.log(markerBox.item(4));
-                                </script>
                             </yandex-map>
                         </no-ssr>
-                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -272,7 +264,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
@@ -322,14 +314,9 @@
                                     :options="balloonOptions"
                                     class="mapMarker"
                                 />
-                                <script>
-                                    let markerPath = document.querySelectorAll('ymaps.ymaps-2-1-78-inner-panes');
-                                    let markerBox = markerPath[0].children;
-                                    console.log(markerBox.item(4));
-                                </script>
                             </yandex-map>
                         </no-ssr>
-                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -363,7 +350,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
