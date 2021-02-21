@@ -33,7 +33,7 @@
                     </script>
                 </yandex-map>
             </no-ssr>
-            <!-- <div class="position-absolute h-99 bg-white filterBox">
+            <div class="position-absolute h-99 bg-white filterBox">
                 <div class="mb-2">
                     <div class="cityBtn">Фергана и Обл</div>
                 </div>
@@ -117,7 +117,7 @@
                         ></b-form-radio-group>
                     </b-form-group>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="container_1290">
             <b-breadcrumb :items="breadcrumbItems" variant="transparent" class="mt-5 mb-4"></b-breadcrumb>
@@ -153,7 +153,7 @@
                                 />
                             </yandex-map>
                         </no-ssr>
-                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -187,7 +187,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
@@ -230,7 +230,7 @@
                                 />
                             </yandex-map>
                         </no-ssr>
-                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -264,7 +264,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
@@ -316,7 +316,7 @@
                                 />
                             </yandex-map>
                         </no-ssr>
-                        <!-- <div class="position-absolute h-100 bg-white p-3 miniFilter">
+                        <div class="position-absolute h-100 bg-white p-3 miniFilter">
                             <div class="mb-2">
                                 <div class="cityBtn">Фергана и Обл</div>
                             </div>
@@ -350,7 +350,7 @@
                                     </div>
                                 </no-ssr>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <h6 class="discription__title">Квартиры в новостройках Ферганы</h6>
                     <span class="main__text">
@@ -454,11 +454,9 @@
                     'Golden House'
                 ],
                 selected_finishing: null,
-                // filter
                 sale: [0, 300],
                 deadline: [2021, 2024],
                 square: [20, 200],
-                // ------
                 coords: [40.388404, 71.780839],
                 markers: [
                     [40.381318, 71.804794],

@@ -1333,7 +1333,11 @@ ol.breadcrumb {
     }
 }
 
-
+a.linkCard {
+   text-decoration: none; 
+   margin: 0;
+   padding: 0;
+}
 .card {
     width: 300px;
     height: 400px;
@@ -1630,7 +1634,7 @@ ol.breadcrumb {
         }
     }
     &__cards {
-        .card {
+        .linkCard {
             margin-right: 30px;
             &:nth-child(4n) {
                 margin-right: 0;
@@ -1642,7 +1646,7 @@ ol.breadcrumb {
     padding: 50px 0 40px 0;
     background: #FFFFFF;
     &__cards {
-        .card {
+        .linkCard {
             margin-right: 30px;
             &:nth-child(4n) {
                 margin-right: 0;
@@ -2233,7 +2237,7 @@ ol.breadcrumb {
         }
     }
     &__cards {
-        .card {
+        .linkCard {
             margin-right: 30px;
             &:nth-child(3n) {
                 margin-right: 0;

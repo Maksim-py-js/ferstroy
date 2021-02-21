@@ -624,18 +624,18 @@ export default {
             ]
         }
     },
-    // mounted() {
-    //     const pathHouseTwo = document.getElementById('pathHouseTwo');
-    //     const blockHouseTwo = document.getElementById('blockHouseTwo');
-    //     pathHouseTwo.onmouseover = function(){
-    //         blockHouseTwo.classList.add("active")
-    //     };
-    //     pathHouseTwo.onmouseout = function(){
-    //         blockHouseTwo.classList.remove("active")
-    //     };
-    //     this.showMap = true,
-    //     this.markerTemplate()
-    // },
+    mounted() {
+        const pathHouseTwo = document.getElementById('pathHouseTwo');
+        const blockHouseTwo = document.getElementById('blockHouseTwo');
+        // pathHouseTwo.onmouseover = function(){
+        //     blockHouseTwo.classList.add("active")
+        // };
+        // pathHouseTwo.onmouseout = function(){
+        //     blockHouseTwo.classList.remove("active")
+        // };
+        this.showMap = true,
+        this.markerTemplate()
+    },
     methods: {
         markerTemplate() {
             this.markerIcon.contentLayout = `<div class="marksItem">

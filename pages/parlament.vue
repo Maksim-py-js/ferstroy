@@ -81,6 +81,7 @@
     .h-panel {
         background: url('../assets/images/png/slide_1-min.png') no-repeat 50% 50%/cover;
         position: relative;
+        transition: 0.5s;
     }
     .background-filter {
         position: absolute;
@@ -89,14 +90,17 @@
         bottom: 0;
         left: 0;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.8) 34.9%);
+        transition: 0.5s;
     }
     .panel-top .header__language_block:hover {
         height: 56px;
+        transition: 0.5s;
     }
     .tabs {
         max-width: 220px;
         width: 100%;
         height: 100vh;
+        transition: 0.5s;
     }
     .tabs-item a{
         color: #fff;
@@ -104,8 +108,10 @@
         font-size: 18px;
         font-weight: 400;
         padding: 0;
+        transition: 0.5s;
     }
     .tabs-item a:hover, .tabs-item.active a {
         color: #FF9800;
+        transition: 0.5s;
     }
 </style>
